@@ -27,9 +27,9 @@ const Hero = () => {
               </p>
             </span>
             <p className='text-lg font-montserrat mt-4 text-gray-800'>
-              serving delicious ready-to-eat and frozen meals for over 20 years.
-              Experience the perfect blend of convenience, taste, and quality in
-              every bite!
+              serving delicious ready-to-eat and ready to cook for over 20
+              years. Experience the perfect blend of convenience, taste, and
+              quality in every bite!
             </p>
 
             <button
