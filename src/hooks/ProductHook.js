@@ -7,6 +7,8 @@ export const useProducts = () => {
     createProduct,
     getPaginatedProducts,
     setProducts,
+    deleteProduct,
+    updateProduct,
   } = useProductStore();
   const create = async (product) => {
     try {
@@ -39,6 +41,23 @@ export const useProducts = () => {
       throw error;
     }
   };
-
-  return { create, getAllProductsPaginated, getOneProduct };
+  const update = async (id, product) => {
+    try {
+      const response = await updateProduct(id, product);
+      return response.data;
+    } catch (error) {
+      console.error('Error in updateProduct hook:', error);
+      throw error;
+    }
+  };
+  const deleteProd = async (id) => {
+    try {
+      const response = await deleteProduct(id);
+      return response.data;
+    } catch (error) {
+      console.error('Error in deleteProduct hook:', error);
+      throw error;
+    }
+  };
+  return { create, getAllProductsPaginated, getOneProduct, update, deleteProd };
 };

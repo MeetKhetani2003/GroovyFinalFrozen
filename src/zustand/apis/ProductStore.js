@@ -89,4 +89,27 @@ export const useProductStore = create((set, get) => ({
       throw error;
     }
   },
+
+  deleteProduct: async (id) => {
+    try {
+      const response = await axiosInstance.delete(`/products/delete/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Error in deleteProduct hook:', error);
+      throw error;
+    }
+  },
+
+  updateProduct: async (id, product) => {
+    try {
+      const response = await axiosInstance.put(
+        `/products/update/${id}`,
+        product
+      );
+      return response.data;
+    } catch (error) {
+      console.error('Error in updateProduct hook:', error);
+      throw error;
+    }
+  },
 }));

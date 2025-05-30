@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import {
   Button,
   Dialog,
@@ -13,19 +12,20 @@ import {
   TableCell,
   TableContainer,
   TableHead,
-  TablePagination,
   TableRow,
   TextField,
+  TablePagination,
 } from '@mui/material';
+import { debounce } from 'lodash';
 import { Pencil, Trash2 } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 
 import { useProducts } from '@/hooks/ProductHook';
 import { useProductStore } from '@/zustand/apis/ProductStore';
 
 const Products = () => {
-  const { products } = useProductStore(); // Access products from Zustand
-  const { getAllProductsPaginated } = useProducts();
+  const { products, setProducts } = useProductStore();
+  const { getAllProductsPaginated, update, deleteProd } = useProducts();
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(8);
@@ -33,29 +33,57 @@ const Products = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [open, setOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(null);
+  const [formData, setFormData] = useState(null);
+
+  // Use ref to track renders and detect loops
+  const renderCount = useRef(0);
+  useEffect(() => {
+    renderCount.current += 1;
+    console.log(`Products component rendered ${renderCount.current} times`);
+  });
+
+  const debouncedSetSearchQuery = useCallback(
+    debounce((value) => {
+      console.log('Setting search query:', value);
+      setSearchQuery(value);
+    }, 300),
+    []
+  );
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
         if (!products || products.length === 0) {
-          await getAllProductsPaginated(1, 8); // Fetch only once
+          console.log('Fetching products...');
+          await getAllProductsPaginated(1, 8);
         }
       } catch (error) {
         console.error('Error fetching products:', error);
       } finally {
-        setLoading(false); // Ensure loading state is updated
+        setLoading(false);
       }
     };
 
     fetchProducts();
-  }, [getAllProductsPaginated]); // Dependency on `getAllProductsPaginated` ensures function stability
+  }, []);
 
   useEffect(() => {
-    // Filter products based on the search query
+    console.log(
+      'Filtering products. SearchQuery:',
+      searchQuery,
+      'Products:',
+      products
+    );
+    if (!products) {
+      setFilteredProducts([]);
+      return;
+    }
     if (searchQuery) {
-      const filtered = products.filter((product) =>
-        product.name.toLowerCase().includes(searchQuery.toLowerCase())
+      const filtered = products.filter(
+        (product) =>
+          product?.name?.toLowerCase?.()?.includes(searchQuery.toLowerCase()) ??
+          false
       );
       setFilteredProducts(filtered);
     } else {
@@ -63,56 +91,103 @@ const Products = () => {
     }
   }, [searchQuery, products]);
 
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
+  useEffect(() => {
+    setFormData(currentProduct);
+  }, [currentProduct]);
 
-  const handleChangeRowsPerPage = (event) => {
+  const handleChangePage = useCallback((event, newPage) => {
+    setPage(newPage);
+  }, []);
+
+  const handleChangeRowsPerPage = useCallback((event) => {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
-  };
+  }, []);
 
-  const handleEditClick = (product) => {
+  const handleEditClick = useCallback((product) => {
+    console.log('Opening dialog for product:', product);
     setCurrentProduct(product);
     setOpen(true);
-  };
+  }, []);
 
-  const handleDeleteClick = (productId) => {
-    // Implement delete functionality here
-    console.log('Delete product with ID:', productId);
-  };
+  const handleDeleteClick = useCallback(
+    async (productId) => {
+      try {
+        console.log('Deleting product:', productId);
+        await deleteProd(productId);
+        const updatedProducts = products.filter(
+          (product) => product._id !== productId
+        );
+        setProducts(updatedProducts);
+      } catch (error) {
+        console.error('Error deleting product:', error);
+      }
+    },
+    [deleteProd, products, setProducts]
+  );
 
-  const handleCloseDialog = () => {
+  const handleCloseDialog = useCallback(() => {
+    console.log('Closing dialog');
     setOpen(false);
     setCurrentProduct(null);
-  };
+    setFormData(null);
+  }, []);
 
-  const handleSaveChanges = () => {
-    // Implement save changes functionality here
-    console.log('Save changes for product:', currentProduct);
-    handleCloseDialog();
-  };
+  const handleInputChange = useCallback((field, value) => {
+    console.log(`Updating formData ${field}: ${value}`);
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  }, []);
+
+  const handleSaveChanges = useCallback(async () => {
+    if (!formData || !formData._id) {
+      console.log('No valid formData to save');
+      return;
+    }
+
+    try {
+      const updatedProductData = {
+        name: formData.name ?? '',
+        stockQuantity: parseFloat(formData.stockQuantity) || 0,
+        packetQuantity: parseFloat(formData.packetQuantity) || 0,
+        packetPrice: parseFloat(formData.packetPrice) || 0,
+        stockUnit: formData.stockUnit ?? '',
+        packetUnit: formData.packetUnit ?? '',
+      };
+      console.log('Saving product:', updatedProductData);
+      await update(formData._id, updatedProductData);
+      setProducts((prev) =>
+        prev.map((product) =>
+          product._id === formData._id
+            ? { ...product, ...updatedProductData }
+            : product
+        )
+      );
+      handleCloseDialog();
+    } catch (error) {
+      console.error('Error updating product:', error);
+    }
+  }, [formData, update, setProducts, handleCloseDialog]);
 
   if (loading) {
-    return <div className="text-center mt-24 text-xl">Loading...</div>;
+    return <div className='text-center mt-24 text-xl'>Loading...</div>;
   }
 
   if (!filteredProducts || filteredProducts.length === 0) {
     return (
-      <div className="text-center mt-24 text-xl">No products available</div>
+      <div className='text-center mt-24 text-xl'>No products available</div>
     );
   }
 
   return (
     <Paper>
-      <h1 className="text-3xl font-semibold mb-6">Product List</h1>
+      <h1 className='text-3xl font-semibold mb-6'>Product List</h1>
       <TextField
-        label="Search Products"
-        variant="outlined"
+        label='Search Products'
+        variant='outlined'
         fullWidth
-        margin="normal"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
+        margin='normal'
+        value={searchQuery ?? ''}
+        onChange={(e) => debouncedSetSearchQuery(e.target.value)}
       />
       <TableContainer style={{ maxHeight: '400px', overflowY: 'auto' }}>
         <Table stickyHeader>
@@ -142,26 +217,27 @@ const Products = () => {
               .map((product, index) => (
                 <TableRow key={product._id}>
                   <TableCell>{page * rowsPerPage + index + 1}</TableCell>
-                  <TableCell>{product.name}</TableCell>
+                  <TableCell>{product.name ?? 'N/A'}</TableCell>
                   <TableCell>
-                    {product.stockQuantity} {product.stockUnit}
+                    {product.stockQuantity ?? 0} {product.stockUnit ?? ''}
                   </TableCell>
                   <TableCell>
-                    {product.packetQuantity} {product.packetUnit}
+                    {product.packetQuantity ?? 0} {product.packetUnit ?? ''}
                   </TableCell>
                   <TableCell>
                     <img
-                      src={product.thumbnail}
-                      alt="Product Thumbnail"
+                      src={product.thumbnail ?? ''}
+                      alt='Product Thumbnail'
                       style={{
                         width: '50px',
                         height: '50px',
                         objectFit: 'cover',
                       }}
+                      onError={(e) => (e.target.src = 'fallback-image.jpg')} // Fallback for invalid image
                     />
                   </TableCell>
-                  <TableCell>{product.packetPrice}</TableCell>
-                  <TableCell>{product.soldPackets}</TableCell>
+                  <TableCell>{product.packetPrice ?? 0}</TableCell>
+                  <TableCell>{product.soldPackets ?? 0}</TableCell>
                   <TableCell>
                     <IconButton onClick={() => handleEditClick(product)}>
                       <Pencil />
@@ -177,7 +253,7 @@ const Products = () => {
       </TableContainer>
       <TablePagination
         rowsPerPageOptions={[8, 16, 24]}
-        component="div"
+        component='div'
         count={filteredProducts.length}
         rowsPerPage={rowsPerPage}
         page={page}
@@ -187,61 +263,69 @@ const Products = () => {
       <Dialog open={open} onClose={handleCloseDialog}>
         <DialogTitle>Edit Product</DialogTitle>
         <DialogContent>
-          <TextField
-            label="Product Name"
-            fullWidth
-            margin="normal"
-            value={currentProduct?.name || ''}
-            onChange={(e) =>
-              setCurrentProduct({ ...currentProduct, name: e.target.value })
-            }
-          />
-          <TextField
-            label="Stock Quantity"
-            fullWidth
-            margin="normal"
-            type="number"
-            value={currentProduct?.stockQuantity || ''}
-            onChange={(e) =>
-              setCurrentProduct({
-                ...currentProduct,
-                stockQuantity: e.target.value,
-              })
-            }
-          />
-          <TextField
-            label="Packet Quantity"
-            fullWidth
-            margin="normal"
-            type="number"
-            value={currentProduct?.packetQuantity || ''}
-            onChange={(e) =>
-              setCurrentProduct({
-                ...currentProduct,
-                packetQuantity: e.target.value,
-              })
-            }
-          />
-          <TextField
-            label="Price"
-            fullWidth
-            margin="normal"
-            type="number"
-            value={currentProduct?.packetPrice || ''}
-            onChange={(e) =>
-              setCurrentProduct({
-                ...currentProduct,
-                packetPrice: e.target.value,
-              })
-            }
-          />
-          {/* Add more fields as necessary */}
+          {formData && (
+            <>
+              <TextField
+                label='Product Name'
+                fullWidth
+                margin='normal'
+                value={formData.name ?? ''}
+                onChange={(e) => handleInputChange('name', e.target.value)}
+              />
+              <TextField
+                label='Stock Quantity'
+                fullWidth
+                margin='normal'
+                type='number'
+                value={formData.stockQuantity ?? ''}
+                onChange={(e) =>
+                  handleInputChange('stockQuantity', e.target.value)
+                }
+              />
+              <TextField
+                label='Packet Quantity'
+                fullWidth
+                margin='normal'
+                type='number'
+                value={formData.packetQuantity ?? ''}
+                onChange={(e) =>
+                  handleInputChange('packetQuantity', e.target.value)
+                }
+              />
+              <TextField
+                label='Price'
+                fullWidth
+                margin='normal'
+                type='number'
+                value={formData.packetPrice ?? ''}
+                onChange={(e) =>
+                  handleInputChange('packetPrice', e.target.value)
+                }
+              />
+              <TextField
+                label='Stock Unit'
+                fullWidth
+                margin='normal'
+                value={formData.stockUnit ?? ''}
+                onChange={(e) => handleInputChange('stockUnit', e.target.value)}
+              />
+              <TextField
+                label='Packet Unit'
+                fullWidth
+                margin='normal'
+                value={formData.packetUnit ?? ''}
+                onChange={(e) =>
+                  handleInputChange('packetUnit', e.target.value)
+                }
+              />
+            </>
+          )}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleCloseDialog} color="primary">
+          <Button onClick={handleCloseDialog} color='primary'>
             Cancel
           </Button>
-          <Button onClick={handleSaveChanges} color="primary">
+          <Button onClick={handleSaveChanges} color='primary'>
             Save
           </Button>
         </DialogActions>

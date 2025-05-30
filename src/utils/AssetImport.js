@@ -13,6 +13,7 @@ import fssai from '../assets/imgs/FSSAI.svg';
 import gravyBase from '../assets/imgs/gravy base.jpg';
 import gravy from '../assets/imgs/Gravy.jpg';
 import iso from '../assets/imgs/iso-2-1.svg';
+import logo from '../assets/imgs/logo.png';
 import noodle from '../assets/imgs/noodle.png';
 import paneer from '../assets/imgs/paneer.jpg';
 import pineapple from '../assets/imgs/pineapple.png';
@@ -36,6 +37,7 @@ export const assets = {
   bgImg: bgimg,
   undhiyu: undhiyu,
   gravyBase: gravyBase,
+  logo: logo,
   soup: soup,
   brochure: brochure,
   driedPowder: driedPowder,

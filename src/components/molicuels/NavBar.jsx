@@ -11,6 +11,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { RiMenu4Line } from 'react-icons/ri';
 import { useLocation } from 'react-router-dom';
 
+import { assets } from '@/utils/AssetImport';
 import Logo from '@/components/atoms/Logo';
 
 import LinkAtom from '../atoms/LinkAtom';
@@ -73,7 +74,14 @@ const NavBar = () => {
             </DialogContent>
           </Dialog>
         </div>
-        <div className='lg:-ml-28'>
+        <div className='lg:-ml-28 flex items-center gap-4'>
+          <span>
+            <img
+              className='w-12 block md:hidden'
+              src={assets.logo}
+              alt='logo'
+            />
+          </span>
           <Logo />
         </div>
 
@@ -84,7 +92,7 @@ const NavBar = () => {
             onClick={() => window.open('https://wa.me/8238009417')}
             className='text-2xl hover:text-main cursor-pointer hidden lg:block'
           />
-
+          <img className='w-12 hidden md:block' src={assets.logo} alt='logo' />
           {/* Mobile Screen - Dropdown */}
           <div className='block lg:hidden'>
             <DropdownMenu>
