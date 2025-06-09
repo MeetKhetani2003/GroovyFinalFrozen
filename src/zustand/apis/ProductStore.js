@@ -9,8 +9,9 @@ export const useProductStore = create((set, get) => ({
   product: null,
   totalPages: 0,
   currentPage: 1,
+  totalCount: 0,
   products: [],
-
+  setTotalCount: (totalCount) => set({ totalCount }),
   setProducts: (products) => set({ products }),
 
   setProduct: (product) => set({ product }),

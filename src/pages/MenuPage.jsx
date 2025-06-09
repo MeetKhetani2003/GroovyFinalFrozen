@@ -70,13 +70,18 @@ const Menu = () => {
     window.scrollTo(0, 0);
     setCategories([
       'All Categories',
-      'Dairy Products',
-      'Sauce',
-      'Gravy',
-      'Dal',
-      'Snacks',
-      'Starter',
-      'Tava Special',
+      'Ready to Eat Gujarati Sabji',
+      'Ready to Eat North Indian Sabji',
+      'Ready to Eat Rice',
+      'Ready to Eat Dal',
+      'Ready to Eat Soup',
+      'Ready to Eat South Special',
+      'Ready to Cook Tava Special',
+      'Ready to Cook Gravy Base',
+      'Ready to Cook Snacks',
+      'Ready to Cook Starters',
+      'Sauces',
+      'Dried Powder',
       'Spices And Masala',
     ]);
   }, []);

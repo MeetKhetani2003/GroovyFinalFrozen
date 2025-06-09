@@ -1,3 +1,5 @@
+import { useMemo } from 'react';
+
 import { useProductStore } from '@/zustand/apis/ProductStore';
 
 export const useProducts = () => {
@@ -10,6 +12,7 @@ export const useProducts = () => {
     deleteProduct,
     updateProduct,
   } = useProductStore();
+
   const create = async (product) => {
     try {
       const response = await createProduct(product);
@@ -20,9 +23,9 @@ export const useProducts = () => {
     }
   };
 
-  const getAllProductsPaginated = async (page, limit) => {
+  const getAllProductsPaginated = async (page, limit, filters = {}) => {
     try {
-      const response = await getPaginatedProducts(page, limit);
+      const response = await getPaginatedProducts(page, limit, filters);
       setProducts(response.data.products);
       return response.data;
     } catch (error) {
@@ -41,6 +44,7 @@ export const useProducts = () => {
       throw error;
     }
   };
+
   const update = async (id, product) => {
     try {
       const response = await updateProduct(id, product);
@@ -50,6 +54,7 @@ export const useProducts = () => {
       throw error;
     }
   };
+
   const deleteProd = async (id) => {
     try {
       const response = await deleteProduct(id);
@@ -59,5 +64,16 @@ export const useProducts = () => {
       throw error;
     }
   };
-  return { create, getAllProductsPaginated, getOneProduct, update, deleteProd };
+
+  // Memoize the returned functions to prevent recreation
+  return useMemo(
+    () => ({
+      create,
+      getAllProductsPaginated,
+      getOneProduct,
+      update,
+      deleteProd,
+    }),
+    [] // Empty dependency array since functions depend on store
+  );
 };

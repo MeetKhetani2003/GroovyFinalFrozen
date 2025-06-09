@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import {
   Button,
   Dialog,
@@ -24,7 +23,7 @@ import { useProducts } from '@/hooks/ProductHook';
 import { useProductStore } from '@/zustand/apis/ProductStore';
 
 const Products = () => {
-  const { products, setProducts } = useProductStore();
+  const { products, setProducts, totalCount } = useProductStore(); // Added totalCount
   const { getAllProductsPaginated, update, deleteProd } = useProducts();
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
@@ -50,58 +49,62 @@ const Products = () => {
     []
   );
 
+  // Fetch products when page, rowsPerPage, or searchQuery changes
   useEffect(() => {
+    let isMounted = true; // Prevent state updates after unmount
+
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        if (!products || products.length === 0) {
-          console.log('Fetching products...');
-          await getAllProductsPaginated(1, 8);
+        console.log(
+          'Fetching products for page:',
+          page + 1,
+          'limit:',
+          rowsPerPage,
+          'search:',
+          searchQuery
+        );
+        const response = await getAllProductsPaginated(page + 1, rowsPerPage, {
+          search: searchQuery,
+        });
+        if (isMounted) {
+          // Ensure products is always an array
+          setFilteredProducts(response?.products || []);
         }
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error('Error fetching products:', error.message || error);
+        if (isMounted) {
+          setFilteredProducts([]);
+        }
       } finally {
-        setLoading(false);
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     };
 
     fetchProducts();
-  }, []);
 
-  useEffect(() => {
-    console.log(
-      'Filtering products. SearchQuery:',
-      searchQuery,
-      'Products:',
-      products
-    );
-    if (!products) {
-      setFilteredProducts([]);
-      return;
-    }
-    if (searchQuery) {
-      const filtered = products.filter(
-        (product) =>
-          product?.name?.toLowerCase?.()?.includes(searchQuery.toLowerCase()) ??
-          false
-      );
-      setFilteredProducts(filtered);
-    } else {
-      setFilteredProducts(products);
-    }
-  }, [searchQuery, products]);
+    return () => {
+      isMounted = false; // Cleanup to prevent state updates after unmount
+    };
+  }, [page, rowsPerPage, searchQuery, getAllProductsPaginated]); // Dependencies
 
+  // Remove separate filtering useEffect since API handles search
   useEffect(() => {
     setFormData(currentProduct);
   }, [currentProduct]);
 
   const handleChangePage = useCallback((event, newPage) => {
+    console.log('Changing to page:', newPage);
     setPage(newPage);
   }, []);
 
   const handleChangeRowsPerPage = useCallback((event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
+    const newRowsPerPage = parseInt(event.target.value, 10);
+    console.log('Changing rows per page to:', newRowsPerPage);
+    setRowsPerPage(newRowsPerPage);
+    setPage(0); // Reset to first page
   }, []);
 
   const handleEditClick = useCallback((product) => {
@@ -115,10 +118,7 @@ const Products = () => {
       try {
         console.log('Deleting product:', productId);
         await deleteProd(productId);
-        const updatedProducts = products.filter(
-          (product) => product._id !== productId
-        );
-        setProducts(updatedProducts);
+        setProducts(products.filter((product) => product._id !== productId));
       } catch (error) {
         console.error('Error deleting product:', error);
       }
@@ -233,7 +233,7 @@ const Products = () => {
                         height: '50px',
                         objectFit: 'cover',
                       }}
-                      onError={(e) => (e.target.src = 'fallback-image.jpg')} // Fallback for invalid image
+                      onError={(e) => (e.target.src = 'fallback-image.jpg')}
                     />
                   </TableCell>
                   <TableCell>{product.packetPrice ?? 0}</TableCell>
@@ -252,9 +252,9 @@ const Products = () => {
         </Table>
       </TableContainer>
       <TablePagination
-        rowsPerPageOptions={[8, 16, 24]}
+        rowsPerPageOptions={[8, 16, 24, 300]}
         component='div'
-        count={filteredProducts.length}
+        count={totalCount || filteredProducts.length} // Use totalCount from store
         rowsPerPage={rowsPerPage}
         page={page}
         onPageChange={handleChangePage}
