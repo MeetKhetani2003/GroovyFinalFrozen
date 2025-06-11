@@ -23,7 +23,7 @@ import { useProducts } from '@/hooks/ProductHook';
 import { useProductStore } from '@/zustand/apis/ProductStore';
 
 const Products = () => {
-  const { products, setProducts, totalCount } = useProductStore(); // Added totalCount
+  const { products, setProducts, totalCount } = useProductStore();
   const { getAllProductsPaginated, update, deleteProd } = useProducts();
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
@@ -33,8 +33,9 @@ const Products = () => {
   const [open, setOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(null);
   const [formData, setFormData] = useState(null);
+  const [thumbnailFile, setThumbnailFile] = useState(null); // New state for thumbnail
+  const [detailedImagesFiles, setDetailedImagesFiles] = useState([]); // New state for detailed images
 
-  // Use ref to track renders and detect loops
   const renderCount = useRef(0);
   useEffect(() => {
     renderCount.current += 1;
@@ -49,9 +50,8 @@ const Products = () => {
     []
   );
 
-  // Fetch products when page, rowsPerPage, or searchQuery changes
   useEffect(() => {
-    let isMounted = true; // Prevent state updates after unmount
+    let isMounted = true;
 
     const fetchProducts = async () => {
       try {
@@ -68,7 +68,6 @@ const Products = () => {
           search: searchQuery,
         });
         if (isMounted) {
-          // Ensure products is always an array
           setFilteredProducts(response?.products || []);
         }
       } catch (error) {
@@ -86,11 +85,10 @@ const Products = () => {
     fetchProducts();
 
     return () => {
-      isMounted = false; // Cleanup to prevent state updates after unmount
+      isMounted = false;
     };
-  }, [page, rowsPerPage, searchQuery, getAllProductsPaginated]); // Dependencies
+  }, [page, rowsPerPage, searchQuery, getAllProductsPaginated]);
 
-  // Remove separate filtering useEffect since API handles search
   useEffect(() => {
     setFormData(currentProduct);
   }, [currentProduct]);
@@ -104,7 +102,7 @@ const Products = () => {
     const newRowsPerPage = parseInt(event.target.value, 10);
     console.log('Changing rows per page to:', newRowsPerPage);
     setRowsPerPage(newRowsPerPage);
-    setPage(0); // Reset to first page
+    setPage(0);
   }, []);
 
   const handleEditClick = useCallback((product) => {
@@ -131,11 +129,22 @@ const Products = () => {
     setOpen(false);
     setCurrentProduct(null);
     setFormData(null);
+    setThumbnailFile(null);
+    setDetailedImagesFiles([]);
   }, []);
 
   const handleInputChange = useCallback((field, value) => {
     console.log(`Updating formData ${field}: ${value}`);
     setFormData((prev) => ({ ...prev, [field]: value }));
+  }, []);
+
+  const handleFileChange = useCallback((event, type) => {
+    const files = event.target.files;
+    if (type === 'thumbnail') {
+      setThumbnailFile(files[0] || null);
+    } else if (type === 'detailedImages') {
+      setDetailedImagesFiles(Array.from(files));
+    }
   }, []);
 
   const handleSaveChanges = useCallback(async () => {
@@ -145,16 +154,48 @@ const Products = () => {
     }
 
     try {
+      const formDataToSend = new FormData();
+      // Append product data
       const updatedProductData = {
         name: formData.name ?? '',
         stockQuantity: parseFloat(formData.stockQuantity) || 0,
-        packetQuantity: parseFloat(formData.packetQuantity) || 0,
-        packetPrice: parseFloat(formData.packetPrice) || 0,
         stockUnit: formData.stockUnit ?? '',
+        packetQuantity: parseFloat(formData.packetQuantity) || 0,
         packetUnit: formData.packetUnit ?? '',
+        packetPrice: parseFloat(formData.packetPrice) || 0,
+        soldPackets: parseInt(formData.soldPackets) || 0,
+        boxQuantity: parseInt(formData.boxQuantity) || 0,
+        category: formData.category ?? '',
+        description: formData.description ?? '',
+        packagingType: formData.packagingType ?? '',
+        friesType: formData.friesType ?? '',
+        feature: formData.feature ?? '',
+        selfLife: formData.selfLife ?? '',
+        storageMethod: formData.storageMethod ?? '',
+        temprature: formData.temprature ?? '',
+        usageApplication: formData.usageApplication ?? '',
+        refrigerationRequired: Boolean(formData.refrigerationRequired),
+        countryOfOrigin: formData.countryOfOrigin ?? '',
+        application: formData.application ?? '',
+        frozenTemprature: formData.frozenTemprature ?? '',
+        ingrediants: formData.ingrediants ?? '',
+        form: formData.form ?? '',
       };
-      console.log('Saving product:', updatedProductData);
-      await update(formData._id, updatedProductData);
+
+      Object.keys(updatedProductData).forEach((key) => {
+        formDataToSend.append(key, updatedProductData[key]);
+      });
+
+      // Append files
+      if (thumbnailFile) {
+        formDataToSend.append('thumbnail', thumbnailFile);
+      }
+      detailedImagesFiles.forEach((file, index) => {
+        formDataToSend.append('detailedImages', file);
+      });
+
+      console.log('Saving product with ID:', formData._id);
+      await update(formData._id, formDataToSend);
       setProducts((prev) =>
         prev.map((product) =>
           product._id === formData._id
@@ -166,7 +207,14 @@ const Products = () => {
     } catch (error) {
       console.error('Error updating product:', error);
     }
-  }, [formData, update, setProducts, handleCloseDialog]);
+  }, [
+    formData,
+    update,
+    setProducts,
+    handleCloseDialog,
+    thumbnailFile,
+    detailedImagesFiles,
+  ]);
 
   if (loading) {
     return <div className='text-center mt-24 text-xl'>Loading...</div>;
@@ -254,7 +302,7 @@ const Products = () => {
       <TablePagination
         rowsPerPageOptions={[8, 16, 24, 300]}
         component='div'
-        count={totalCount || filteredProducts.length} // Use totalCount from store
+        count={totalCount || filteredProducts.length}
         rowsPerPage={rowsPerPage}
         page={page}
         onPageChange={handleChangePage}
@@ -279,27 +327,7 @@ const Products = () => {
                 type='number'
                 value={formData.stockQuantity ?? ''}
                 onChange={(e) =>
-                  handleInputChange('stockQuantity', e.target.value)
-                }
-              />
-              <TextField
-                label='Packet Quantity'
-                fullWidth
-                margin='normal'
-                type='number'
-                value={formData.packetQuantity ?? ''}
-                onChange={(e) =>
-                  handleInputChange('packetQuantity', e.target.value)
-                }
-              />
-              <TextField
-                label='Price'
-                fullWidth
-                margin='normal'
-                type='number'
-                value={formData.packetPrice ?? ''}
-                onChange={(e) =>
-                  handleInputChange('packetPrice', e.target.value)
+                  handleInputChange('stockQuantity', parseFloat(e.target.value))
                 }
               />
               <TextField
@@ -310,6 +338,19 @@ const Products = () => {
                 onChange={(e) => handleInputChange('stockUnit', e.target.value)}
               />
               <TextField
+                label='Packet Quantity'
+                fullWidth
+                margin='normal'
+                type='number'
+                value={formData.packetQuantity ?? ''}
+                onChange={(e) =>
+                  handleInputChange(
+                    'packetQuantity',
+                    parseFloat(e.target.value)
+                  )
+                }
+              />
+              <TextField
                 label='Packet Unit'
                 fullWidth
                 margin='normal'
@@ -317,6 +358,182 @@ const Products = () => {
                 onChange={(e) =>
                   handleInputChange('packetUnit', e.target.value)
                 }
+              />
+              <TextField
+                label='Packet Price'
+                fullWidth
+                margin='normal'
+                type='number'
+                value={formData.packetPrice ?? ''}
+                onChange={(e) =>
+                  handleInputChange('packetPrice', parseFloat(e.target.value))
+                }
+              />
+              <TextField
+                label='Sold Packets'
+                fullWidth
+                margin='normal'
+                type='number'
+                value={formData.soldPackets ?? ''}
+                onChange={(e) =>
+                  handleInputChange('soldPackets', parseInt(e.target.value))
+                }
+              />
+              <TextField
+                label='Box Quantity'
+                fullWidth
+                margin='normal'
+                type='number'
+                value={formData.boxQuantity ?? ''}
+                onChange={(e) =>
+                  handleInputChange('boxQuantity', parseInt(e.target.value))
+                }
+              />
+              <TextField
+                label='Category'
+                fullWidth
+                margin='normal'
+                value={formData.category ?? ''}
+                onChange={(e) => handleInputChange('category', e.target.value)}
+              />
+              <TextField
+                label='Description'
+                fullWidth
+                margin='normal'
+                value={formData.description ?? ''}
+                onChange={(e) =>
+                  handleInputChange('description', e.target.value)
+                }
+              />
+              <TextField
+                label='Packaging Type'
+                fullWidth
+                margin='normal'
+                value={formData.packagingType ?? ''}
+                onChange={(e) =>
+                  handleInputChange('packagingType', e.target.value)
+                }
+              />
+              <TextField
+                label='Fries Type'
+                fullWidth
+                margin='normal'
+                value={formData.friesType ?? ''}
+                onChange={(e) => handleInputChange('friesType', e.target.value)}
+              />
+              <TextField
+                label='Feature'
+                fullWidth
+                margin='normal'
+                value={formData.feature ?? ''}
+                onChange={(e) => handleInputChange('feature', e.target.value)}
+              />
+              <TextField
+                label='Shelf Life'
+                fullWidth
+                margin='normal'
+                value={formData.selfLife ?? ''}
+                onChange={(e) => handleInputChange('selfLife', e.target.value)}
+              />
+              <TextField
+                label='Storage Method'
+                fullWidth
+                margin='normal'
+                value={formData.storageMethod ?? ''}
+                onChange={(e) =>
+                  handleInputChange('storageMethod', e.target.value)
+                }
+              />
+              <TextField
+                label='Temperature'
+                fullWidth
+                margin='normal'
+                value={formData.temprature ?? ''}
+                onChange={(e) =>
+                  handleInputChange('temprature', e.target.value)
+                }
+              />
+              <TextField
+                label='Usage Application'
+                fullWidth
+                margin='normal'
+                value={formData.usageApplication ?? ''}
+                onChange={(e) =>
+                  handleInputChange('usageApplication', e.target.value)
+                }
+              />
+              <TextField
+                label='Refrigeration Required'
+                fullWidth
+                margin='normal'
+                select
+                SelectProps={{ native: true }}
+                value={formData.refrigerationRequired ?? false}
+                onChange={(e) =>
+                  handleInputChange(
+                    'refrigerationRequired',
+                    e.target.value === 'true'
+                  )
+                }
+              >
+                <option value={true}>Yes</option>
+                <option value={false}>No</option>
+              </TextField>
+              <TextField
+                label='Country of Origin'
+                fullWidth
+                margin='normal'
+                value={formData.countryOfOrigin ?? ''}
+                onChange={(e) =>
+                  handleInputChange('countryOfOrigin', e.target.value)
+                }
+              />
+              <TextField
+                label='Application'
+                fullWidth
+                margin='normal'
+                value={formData.application ?? ''}
+                onChange={(e) =>
+                  handleInputChange('application', e.target.value)
+                }
+              />
+              <TextField
+                label='Frozen Temperature'
+                fullWidth
+                margin='normal'
+                value={formData.frozenTemprature ?? ''}
+                onChange={(e) =>
+                  handleInputChange('frozenTemprature', e.target.value)
+                }
+              />
+              <TextField
+                label='Ingredients'
+                fullWidth
+                margin='normal'
+                value={formData.ingrediants ?? ''}
+                onChange={(e) =>
+                  handleInputChange('ingrediants', e.target.value)
+                }
+              />
+              <TextField
+                label='Form'
+                fullWidth
+                margin='normal'
+                value={formData.form ?? ''}
+                onChange={(e) => handleInputChange('form', e.target.value)}
+              />
+              <input
+                type='file'
+                accept='image/*'
+                onChange={(e) => handleFileChange(e, 'thumbnail')}
+                style={{ marginTop: '16px' }}
+              />
+              <input
+                type='file'
+                accept='image/*'
+                multiple
+                onChange={(e) => handleFileChange(e, 'detailedImages')}
+                style={{ marginTop: '16px' }}
               />
             </>
           )}
