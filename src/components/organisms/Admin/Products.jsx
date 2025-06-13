@@ -251,6 +251,7 @@ const Products = () => {
               <TableCell style={{ whiteSpace: 'nowrap' }}>
                 Packet Quantity
               </TableCell>
+              <TableCell style={{ whiteSpace: 'nowrap' }}>Category</TableCell>
               <TableCell style={{ whiteSpace: 'nowrap' }}>Thumbnail</TableCell>
               <TableCell style={{ whiteSpace: 'nowrap' }}>Price</TableCell>
               <TableCell style={{ whiteSpace: 'nowrap' }}>
@@ -272,6 +273,7 @@ const Products = () => {
                   <TableCell>
                     {product.packetQuantity ?? 0} {product.packetUnit ?? ''}
                   </TableCell>
+                  <TableCell>{product.category ?? 'N/A'}</TableCell>
                   <TableCell>
                     <img
                       src={product.thumbnail ?? ''}
