@@ -11,7 +11,9 @@ export const useProductStore = create((set, get) => ({
   currentPage: 1,
   totalCount: 0,
   products: [],
+  categories: ['All Categories'],
   setTotalCount: (totalCount) => set({ totalCount }),
+  setCategories: (categories) => set({ categories }),
   setProducts: (products) => set({ products }),
 
   setProduct: (product) => set({ product }),
@@ -24,7 +26,24 @@ export const useProductStore = create((set, get) => ({
       throw error;
     }
   },
-
+  getUniqueCategories: async () => {
+    try {
+      const response = await axiosInstance.get('/products/categories');
+      const uniqueCategories = response.data.data.categories;
+      console.log(response);
+      set({ categories: uniqueCategories });
+      return uniqueCategories;
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to fetch categories',
+        variant: 'destructive',
+        duration: 3000,
+      });
+      return ['All Categories'];
+    }
+  },
   getPaginatedProducts: async (page, limit, filters = {}) => {
     try {
       // Generate a unique cache key
