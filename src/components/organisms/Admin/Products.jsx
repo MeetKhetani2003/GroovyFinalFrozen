@@ -23,7 +23,8 @@ import { useProducts } from '@/hooks/ProductHook';
 import { useProductStore } from '@/zustand/apis/ProductStore';
 
 const Products = () => {
-  const { products, setProducts, totalCount } = useProductStore();
+  const { products, setProducts, totalCount, getUniqueCategories, categories } =
+    useProductStore();
   const { getAllProductsPaginated, update, deleteProd } = useProducts();
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
@@ -33,8 +34,8 @@ const Products = () => {
   const [open, setOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(null);
   const [formData, setFormData] = useState(null);
-  const [thumbnailFile, setThumbnailFile] = useState(null); // New state for thumbnail
-  const [detailedImagesFiles, setDetailedImagesFiles] = useState([]); // New state for detailed images
+  const [thumbnailFile, setThumbnailFile] = useState(null);
+  const [detailedImagesFiles, setDetailedImagesFiles] = useState([]);
 
   const renderCount = useRef(0);
   useEffect(() => {
@@ -49,6 +50,18 @@ const Products = () => {
     }, 300),
     []
   );
+
+  // Fetch categories when component mounts
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        await getUniqueCategories();
+      } catch (error) {
+        console.error('Error fetching categories:', error);
+      }
+    };
+    fetchCategories();
+  }, [getUniqueCategories]);
 
   useEffect(() => {
     let isMounted = true;
@@ -155,7 +168,6 @@ const Products = () => {
 
     try {
       const formDataToSend = new FormData();
-      // Append product data
       const updatedProductData = {
         name: formData.name ?? '',
         stockQuantity: parseFloat(formData.stockQuantity) || 0,
@@ -186,7 +198,6 @@ const Products = () => {
         formDataToSend.append(key, updatedProductData[key]);
       });
 
-      // Append files
       if (thumbnailFile) {
         formDataToSend.append('thumbnail', thumbnailFile);
       }
@@ -395,9 +406,22 @@ const Products = () => {
                 label='Category'
                 fullWidth
                 margin='normal'
+                select
+                SelectProps={{
+                  native: true,
+                  'aria-label': 'Select product category',
+                }}
                 value={formData.category ?? ''}
                 onChange={(e) => handleInputChange('category', e.target.value)}
-              />
+              >
+                {categories
+                  .filter((category) => category !== 'All Categories')
+                  .map((category) => (
+                    <option key={category} value={category}>
+                      {category}
+                    </option>
+                  ))}
+              </TextField>
               <TextField
                 label='Description'
                 fullWidth
