@@ -11,15 +11,16 @@ const DetailedImages = () => {
   const [loading, setLoading] = useState(true);
   const [mainImage, setMainImage] = useState('');
   const { id } = useParams();
+
   useEffect(() => {
     fetchProducts();
   }, []);
+
   const fetchProducts = async () => {
     try {
       const response = await getSingleProduct(id);
       setProduct(response.data);
 
-      // Ensure that detailedImages exist before setting mainImage
       if (
         response.data.detailedImages &&
         response.data.detailedImages.length > 0
@@ -34,15 +35,41 @@ const DetailedImages = () => {
     }
   };
 
-  // Assuming we want the first product from the API response
-  // const product = product?.[0] || null;
-  // const detailedImages = product?.photos || []; // Using API field for images
+  // Function to format field names for display
+  const formatFieldName = (field) => {
+    const fieldMap = {
+      boxQuantity: 'Box Quantity',
+      packagingType: 'Packaging Type',
+      selfLife: 'Shelf Life',
+      storageMethod: 'Storage Method',
+      temprature: 'Temperature',
+      refrigerationRequired: 'Refrigeration Required',
+      countryOfOrigin: 'Country of Origin',
+      application: 'Application',
+      frozenTemprature: 'Frozen Temperature',
+      ingrediants: 'Ingredients',
+      form: 'Form',
+    };
+    return (
+      fieldMap[field] ||
+      field.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())
+    );
+  };
 
-  // useEffect(() => {
-  //   if (detailedImages.length > 0) {
-  //     setMainImage(detailedImages[0]); // Set first image as default
-  //   }
-  // }, [detailedImages]);
+  // Define fields to display in the table
+  const detailFields = [
+    'boxQuantity',
+    'packagingType',
+    'selfLife',
+    'storageMethod',
+    'temprature',
+    'refrigerationRequired',
+    'countryOfOrigin',
+    'application',
+    'frozenTemprature',
+    'ingrediants',
+    'form',
+  ];
 
   if (loading) {
     return (
@@ -65,7 +92,6 @@ const DetailedImages = () => {
       <div className='flex flex-col lg:flex-row gap-8 pt-28'>
         {/* Product Images Section */}
         <div className='flex flex-col sm:flex-row gap-4 w-full lg:w-1/2'>
-          {/* Thumbnails - scrollable on mobile */}
           <div className='flex sm:flex-col gap-2 sm:gap-4 order-2 sm:order-1 overflow-x-auto sm:overflow-visible whitespace-nowrap sm:whitespace-normal'>
             {Array.isArray(product.detailedImages) &&
               product.detailedImages.map((image, index) => (
@@ -80,8 +106,6 @@ const DetailedImages = () => {
                 />
               ))}
           </div>
-
-          {/* Main Image */}
           <div className='w-full flex-1 order-1 sm:order-2'>
             <InnerImageZoom
               src={mainImage}
@@ -98,23 +122,18 @@ const DetailedImages = () => {
         </div>
 
         {/* Product Details Section */}
-        <div className='w-full lg:w-1/2'>
-          {/* Product Title */}
+        <div className='w-full'>
           <h1 className='text-4xl font-bold mb-6 text-gray-900'>
             {product.name}
           </h1>
-
-          {/* Price and Category */}
           <div className='flex items-center gap-4 mb-8'>
             <p className='text-3xl font-semibold text-gray-900'>
-              {` ₹ ${product.packetPrice} / KG`}
+              {`₹${product.packetPrice} / ${product.packetQuantity}${product.packetUnit}`}
             </p>
             <p className='text-lg text-gray-600 bg-gray-100 px-3 py-1 rounded-full'>
               {product.category}
             </p>
           </div>
-
-          {/* Add to Cart and Wishlist Buttons */}
           <div className='flex gap-4 mb-8'>
             <button className='bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600'>
               Add to Cart
@@ -123,8 +142,6 @@ const DetailedImages = () => {
               Add to Wishlist
             </button>
           </div>
-
-          {/* Description */}
           <div className='mb-10'>
             <h2 className='text-2xl font-semibold mb-6 text-gray-900'>
               {product.detailedDescription || 'Product Details'}
@@ -133,71 +150,30 @@ const DetailedImages = () => {
               {product.description}
             </p>
           </div>
-          <div className='mb-10'>
-            <h3 className='text-2xl font-semibold mb-6 text-gray-900'>
-              Product Details
-            </h3>
-            <table className='min-w-full bg-white'>
-              <tbody>
-                <tr>
-                  <td className='border px-4 py-2 font-semibold'>Box Size</td>
-                  <td className='border px-4 py-2'>12 Packets</td>
-                </tr>
-                <tr>
-                  <td className='border px-4 py-2 font-semibold'>
-                    Packeging Type
-                  </td>
-                  <td className='border px-4 py-2'>Jar</td>
-                </tr>
-                <tr>
-                  <td className='border px-4 py-2 font-semibold'>Self Life</td>
-                  <td className='border px-4 py-2'>6 Months</td>
-                </tr>
-                <tr>
-                  <td className='border px-4 py-2 font-semibold'>
-                    Storage Method
-                  </td>
-                  <td className='border px-4 py-2'>Refridgerator</td>
-                </tr>
-                <tr>
-                  <td className='border px-4 py-2 font-semibold'>Temprature</td>
-                  <td className='border px-4 py-2'>+4°C or Below</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
         </div>
       </div>
-      <div className='mt-16'>
-        <h2 className='text-3xl font-bold mb-8 text-gray-900'>
-          Suggested Products
-        </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-          {Array(4)
-            .fill(product) // Using the same product as placeholder for now
-            .map((suggestedProduct, index) => (
-              <div
-                key={index}
-                className='border p-4 rounded-lg shadow-sm hover:shadow-lg transition duration-200'
-              >
-                <img
-                  src={suggestedProduct.detailedImages?.[0] || mainImage}
-                  alt={suggestedProduct.name}
-                  className='w-full h-48 object-cover mb-4 rounded-lg'
-                />
-                <h3 className='text-lg font-semibold text-gray-900'>
-                  {suggestedProduct.name}
-                </h3>
-                <p className='text-gray-600 text-sm'>
-                  {suggestedProduct.category}
-                </p>
-                <p className='text-lg font-semibold text-gray-900 mt-2'>{`₹ ${suggestedProduct.packetPrice} / KG`}</p>
-                <button className='mt-4 w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600'>
-                  View Details
-                </button>
-              </div>
+      <div className='mb-10'>
+        <h3 className='text-2xl font-semibold mb-6 text-gray-900'>
+          Product Details
+        </h3>
+        <table className='w-full bg-white border-collapse'>
+          <tbody>
+            {detailFields.map((field) => (
+              <tr key={field}>
+                <td className='border px-4 py-2 font-semibold w-1/3'>
+                  {formatFieldName(field)}
+                </td>
+                <td className='border px-4 py-2'>
+                  {field === 'refrigerationRequired'
+                    ? product[field]
+                      ? 'Yes'
+                      : 'No'
+                    : product[field] || 'N/A'}
+                </td>
+              </tr>
             ))}
-        </div>
+          </tbody>
+        </table>
       </div>
     </div>
   );
