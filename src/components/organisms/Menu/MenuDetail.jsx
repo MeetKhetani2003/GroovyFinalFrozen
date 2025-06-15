@@ -38,17 +38,11 @@ const DetailedImages = () => {
   // Function to format field names for display
   const formatFieldName = (field) => {
     const fieldMap = {
-      boxQuantity: 'Box Quantity',
+      boxQuantity: 'Box Size',
       packagingType: 'Packaging Type',
       selfLife: 'Shelf Life',
       storageMethod: 'Storage Method',
       temprature: 'Temperature',
-      refrigerationRequired: 'Refrigeration Required',
-      countryOfOrigin: 'Country of Origin',
-      application: 'Application',
-      frozenTemprature: 'Frozen Temperature',
-      ingrediants: 'Ingredients',
-      form: 'Form',
     };
     return (
       fieldMap[field] ||
@@ -63,12 +57,6 @@ const DetailedImages = () => {
     'selfLife',
     'storageMethod',
     'temprature',
-    'refrigerationRequired',
-    'countryOfOrigin',
-    'application',
-    'frozenTemprature',
-    'ingrediants',
-    'form',
   ];
 
   if (loading) {
@@ -134,14 +122,14 @@ const DetailedImages = () => {
               {product.category}
             </p>
           </div>
-          <div className='flex gap-4 mb-8'>
+          {/* <div className='flex gap-4 mb-8'>
             <button className='bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600'>
               Add to Cart
             </button>
             <button className='bg-gray-200 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-300'>
               Add to Wishlist
             </button>
-          </div>
+          </div> */}
           <div className='mb-10'>
             <h2 className='text-2xl font-semibold mb-6 text-gray-900'>
               {product.detailedDescription || 'Product Details'}
@@ -150,30 +138,28 @@ const DetailedImages = () => {
               {product.description}
             </p>
           </div>
+          <div className='mb-10'>
+            <h3 className='text-2xl font-semibold mb-6 text-gray-900'>
+              Product Details
+            </h3>
+            <table className='w-full bg-white border-collapse'>
+              <tbody>
+                {detailFields.map((field) => (
+                  <tr key={field}>
+                    <td className='border px-4 py-2 font-semibold w-1/3'>
+                      {formatFieldName(field)}
+                    </td>
+                    <td className='border px-4 py-2'>
+                      {field === 'boxQuantity'
+                        ? `${product[field]} Packets`
+                        : product[field] || 'N/A'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <div className='mb-10'>
-        <h3 className='text-2xl font-semibold mb-6 text-gray-900'>
-          Product Details
-        </h3>
-        <table className='w-full bg-white border-collapse'>
-          <tbody>
-            {detailFields.map((field) => (
-              <tr key={field}>
-                <td className='border px-4 py-2 font-semibold w-1/3'>
-                  {formatFieldName(field)}
-                </td>
-                <td className='border px-4 py-2'>
-                  {field === 'refrigerationRequired'
-                    ? product[field]
-                      ? 'Yes'
-                      : 'No'
-                    : product[field] || 'N/A'}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
       </div>
     </div>
   );
