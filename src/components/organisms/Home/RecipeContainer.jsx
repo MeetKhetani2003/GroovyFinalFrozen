@@ -4,23 +4,23 @@ import RecipeCard from '@/components/molicuels/RecipeCard';
 const recipes = [
   {
     videoId: 'yW-GF7Tpf10',
-    heading: 'Sweet orange yellow from Australia',
-    description: '2021-08-27  No Comments',
+    heading: 'Ready to Eat Paneer Bhurji',
+    // description: '2021-08-27  No Comments',
   },
   {
     videoId: 'TxvqhxzTp4U',
-    heading: 'Sweet orange yellow from Australia',
-    description: '2021-08-27  No Comments',
+    heading: 'GROOVY KASHMIRI DUM ALOO',
+    // description: '2021-08-27  No Comments',
   },
   {
     videoId: 'H6sy8LKAzAk',
-    heading: 'Sweet orange yellow from Australia',
-    description: '2021-08-27  No Comments',
+    heading: 'Ready to Eat Banarasi Dum Aloo',
+    // description: '2021-08-27  No Comments',
   },
   {
     videoId: 'Dlv-FIr5l18',
-    heading: 'Sweet orange yellow from Australia',
-    description: '2021-08-27  No Comments',
+    heading: 'Ready to Eat Desi Chana Masala',
+    // description: '2021-08-27  No Comments',
   },
 ];
 
