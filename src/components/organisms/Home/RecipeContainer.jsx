@@ -4,17 +4,17 @@ import RecipeCard from '@/components/molicuels/RecipeCard';
 const recipes = [
   {
     videoId: 'yW-GF7Tpf10',
-    heading: 'Ready to Eat Paneer Bhurji',
+    heading: 'Ready to Eat Banarasi Dum Aloo',
     // description: '2021-08-27  No Comments',
   },
   {
     videoId: 'TxvqhxzTp4U',
-    heading: 'GROOVY KASHMIRI DUM ALOO',
+    heading: 'Ready to Eat Kashmiri Dum Aloo',
     // description: '2021-08-27  No Comments',
   },
   {
     videoId: 'H6sy8LKAzAk',
-    heading: 'Ready to Eat Banarasi Dum Aloo',
+    heading: 'Ready to Eat Paneer Bhurji',
     // description: '2021-08-27  No Comments',
   },
   {
