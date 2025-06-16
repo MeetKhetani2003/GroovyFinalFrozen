@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { assets } from '@/utils/AssetImport';
 
 // Use an environment variable for the base URL (e.g., set in .env)
-// const BASE_URL = 'https://groovy-final-frozen.vercel.app';
-const BASE_URL = 'http://localhost:5173';
+const BASE_URL = 'https://groovy-final-frozen.vercel.app';
+// const BASE_URL = 'http://localhost:5173';
 
 const categories = [
   {
