@@ -3,7 +3,7 @@ import RecipeCard from '@/components/molicuels/RecipeCard';
 // Define an array of video data with YouTube links and other details
 const recipes = [
   {
-    videoId: 'yW-b7efjyQGgqw',
+    videoId: 'b7efjyQGgqw',
     heading: 'Ready to Eat Veg Kofta',
     // description: '2021-08-27  No Comments',
   },
