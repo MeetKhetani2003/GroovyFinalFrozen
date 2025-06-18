@@ -13,11 +13,11 @@ const categories = [
     imageUrl: assets.undhiyu,
     redirectUrl: `${BASE_URL}/menu?category=GUJARATI+READY+TO+EAT+SUBJI`,
   },
-  // {
-  //   name: 'Ready to Eat North Indian Sabji',
-  //   imageUrl: assets.paneer,
-  //   redirectUrl: `${BASE_URL}/menu?category=NORTH+INDIAN+READY+TO+EAT+SUBJI`,
-  // },
+  {
+    name: 'Ready to Eat North Indian Sabji',
+    imageUrl: assets.paneer,
+    redirectUrl: `${BASE_URL}/menu?category=Indian+Ready+to+Eat+Sabji`,
+  },
   {
     name: 'Ready to Eat Rice',
     imageUrl: assets.rice,

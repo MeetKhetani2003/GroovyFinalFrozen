@@ -3,8 +3,8 @@ import RecipeCard from '@/components/molicuels/RecipeCard';
 // Define an array of video data with YouTube links and other details
 const recipes = [
   {
-    videoId: 'yW-GF7Tpf10',
-    heading: 'Ready to Eat Banarasi Dum Aloo',
+    videoId: 'yW-b7efjyQGgqw',
+    heading: 'Ready to Eat Veg Kofta',
     // description: '2021-08-27  No Comments',
   },
   {
@@ -20,6 +20,16 @@ const recipes = [
   {
     videoId: 'Dlv-FIr5l18',
     heading: 'Ready to Eat Desi Chana Masala',
+    // description: '2021-08-27  No Comments',
+  },
+  {
+    videoId: 'yqdHGH5jdPw',
+    heading: 'Ready to Cook Rajma Masala',
+    // description: '2021-08-27  No Comments',
+  },
+  {
+    videoId: 'zCNpkQphvDw',
+    heading: 'Ready to Eat Paneet Lababdar',
     // description: '2021-08-27  No Comments',
   },
 ];
