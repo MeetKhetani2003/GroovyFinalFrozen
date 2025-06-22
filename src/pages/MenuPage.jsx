@@ -19,18 +19,12 @@ import MenuProductcard from '@/components/molicuels/MenuProductcard';
 
 const Menu = () => {
   const navigate = useNavigate();
-  const {
-    products,
-    setProducts,
-    totalProducts,
-    getPaginatedProducts,
-    categories,
-    categoriesLoading,
-    getUniqueCategories,
-  } = useProductStore();
+  const { products, setProducts, totalProducts, getPaginatedProducts } =
+    useProductStore();
+  const [categories, setCategories] = useState(['All Categories']);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageLimit] = useState(10);
+  const [pageLimit] = useState(8);
   const { addPacketToCart } = useCart();
 
   const [filters, setFilters] = useState({
@@ -64,26 +58,35 @@ const Menu = () => {
   useEffect(() => {
     const queryParams = new URLSearchParams(window.location.search);
     const initialCategory = queryParams.get('category') || 'All Categories';
+
     setFilters((prevFilters) => ({
       ...prevFilters,
-      category: categories.includes(initialCategory)
-        ? initialCategory
-        : 'All Categories',
+      category: initialCategory,
     }));
     setCurrentPage(1);
-  }, [categories]);
-
-  useEffect(() => {
-    const fetchCategories = async () => {
-      const res = await getUniqueCategories();
-      console.log(res);
-    };
-
-    fetchCategories();
-  }, [getUniqueCategories]);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setCategories([
+      'All Categories',
+      'Ready to Eat Gujarati Sabji',
+      'Ready to Eat North Indian Sabji',
+      'Ready to Eat Rice',
+      'Ready to Eat Dal',
+      'Ready to Eat Soup',
+      'Ready to Eat South Special',
+      'Ready to Cook Tava Special',
+      'Ready to Cook Gravy Base',
+      'Ready to Cook Snacks',
+      'Ready to Cook Starters',
+      'Sauces',
+      'Dried Powder',
+      'Spices And Masala',
+    ]);
+  }, []);
+
+  useEffect(() => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
@@ -103,10 +106,11 @@ const Menu = () => {
       }
     };
 
+    // Only fetch products if the category or search term has changed
     if (filters.category || filters.search) {
       fetchProducts();
     }
-  }, [currentPage, filters, getPaginatedProducts, setProducts]);
+  }, [currentPage, filters, getPaginatedProducts]);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -145,28 +149,19 @@ const Menu = () => {
           className='w-1/2 p-2 border rounded-md'
           placeholder='Search products'
         />
-        <div className='w-1/2 rounded-lg shadow-lg'>
-          {categoriesLoading ? (
-            <select disabled className='w-full p-2 border rounded-md'>
-              <option>Loading categories...</option>
-            </select>
-          ) : (
-            <select
-              name='category'
-              value={filters.category}
-              onChange={handleFilterChange}
-              className='w-full p-2 border rounded-md'
-            >
-              {(Array.isArray(categories)
-                ? categories
-                : ['All Categories']
-              ).map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-          )}
+        <div className=' w-1/2 rounded-lg shadow-lg'>
+          <select
+            name='category'
+            value={filters.category}
+            onChange={handleFilterChange}
+            className='w-full p-2 border rounded-md'
+          >
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
         </div>
         <button
           onClick={handleSearchClick}

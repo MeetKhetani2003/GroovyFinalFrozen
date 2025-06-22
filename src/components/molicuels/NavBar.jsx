@@ -5,7 +5,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { FacebookIcon, InstagramIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import { RiMenu4Line } from 'react-icons/ri';
@@ -86,28 +85,6 @@ const NavBar = () => {
         </div>
 
         <div className='flex items-center space-x-8'>
-          <a
-            href='https://www.instagram.com/groovyfoodsindia?igsh=MWczamdrMXc0bWkyMg=='
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaInstagram size={20} className='hover:text-main cursor-pointer' />
-          </a>
-          <a
-            href='https://www.facebook.com/share/16XdDCyDWq/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaFacebook size={20} className='hover:text-main  cursor-pointer' />
-          </a>
-          <a
-            href='https://youtube.com/@groovyfoodsindia?si=khxpbeEeKb9Nx6T0'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaYoutube size={20} className='hover:text-main  cursor-pointer' />
-          </a>
-          <FaWhatsapp size={20} className='hover:text-main  cursor-pointer' />
           <img className='w-12 hidden md:block' src={assets.logo} alt='logo' />
           {/* Mobile Screen - Dropdown */}
           <div className='block lg:hidden'>
@@ -143,9 +120,77 @@ const NavBar = () => {
                       <Distributor />
                     </DialogContent>
                   </Dialog>
+                  {/* Social Media Links */}
+                  <div className='flex space-x-4 mt-3'>
+                    <a
+                      href='https://www.instagram.com/groovyfoodsindia?igsh=MWczamdrMXc0bWkyMg=='
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <FaInstagram
+                        size={20}
+                        className='hover:text-main cursor-pointer'
+                      />
+                    </a>
+                    <a
+                      href='https://www.facebook.com/share/16XdDCyDWq/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <FaFacebook
+                        size={20}
+                        className='hover:text-main cursor-pointer'
+                      />
+                    </a>
+                    <a
+                      href='https://youtube.com/@groovyfoodsindia?si=khxpbeEeKb9Nx6T0'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <FaYoutube
+                        size={20}
+                        className='hover:text-main cursor-pointer'
+                      />
+                    </a>
+                    <FaWhatsapp
+                      size={20}
+                      className='hover:text-main cursor-pointer'
+                    />
+                  </div>
                 </div>
               </DropdownMenuContent>
             </DropdownMenu>
+          </div>
+          {/* Social Media Links for Larger Screens */}
+          <div className='hidden lg:flex items-center space-x-8'>
+            <a
+              href='https://www.instagram.com/groovyfoodsindia?igsh=MWczamdrMXc0bWkyMg=='
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaInstagram
+                size={20}
+                className='hover:text-main cursor-pointer'
+              />
+            </a>
+            <a
+              href='https://www.facebook.com/share/16XdDCyDWq/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaFacebook
+                size={20}
+                className='hover:text-main cursor-pointer'
+              />
+            </a>
+            <a
+              href='https://youtube.com/@groovyfoodsindia?si=khxpbeEeKb9Nx6T0'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaYoutube size={20} className='hover:text-main cursor-pointer' />
+            </a>
+            <FaWhatsapp size={20} className='hover:text-main cursor-pointer' />
           </div>
         </div>
       </div>
