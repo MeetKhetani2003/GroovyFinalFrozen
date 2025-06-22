@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import { FaBox, FaDollarSign, FaUsers } from 'react-icons/fa'; // Import icons from react-icons
 import {
   Bar,
   BarChart,
@@ -14,12 +12,13 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { useEffect, useState } from 'react';
+import { FaBox, FaDollarSign, FaUsers } from 'react-icons/fa';
 
 import axiosInstance from '@/zustand/instences/axios';
 
 const Dashboard = () => {
   const [products, setProducts] = useState([]);
-  // eslint-disable-next-line no-unused-vars
   const [users, setUsers] = useState([]);
   const [chartData, setChartData] = useState([]);
   const [inventoryData, setInventoryData] = useState([]);
@@ -60,17 +59,13 @@ const Dashboard = () => {
       if (productId === 'all' || product._id === productId) {
         const createdAt = new Date(product.createdAt);
         const month = createdAt.getMonth();
-        console.log(product.soldPackets);
-
         product.soldPackets = product.soldPackets / 3;
         monthlyData[month] += product.soldPackets || 0;
       }
     });
 
     const formattedData = monthlyData.map((total, index) => ({
-      month: new Date(0, index).toLocaleString('default', {
-        month: 'short',
-      }),
+      month: new Date(0, index).toLocaleString('default', { month: 'short' }),
       soldPackets: total,
     }));
 
@@ -79,38 +74,51 @@ const Dashboard = () => {
 
   const convertToPackets = (stockQuantity, packetQuantity, unit) => {
     let packets = 0;
-
-    if (unit === 'gram') {
-      packets = Math.floor(stockQuantity / packetQuantity);
-    } else if (unit === 'kg') {
+    if (unit === 'gram' || unit === 'kg') {
       packets = Math.floor(stockQuantity / packetQuantity);
     }
-
     return packets;
   };
 
   const updateInventoryData = (products) => {
-    const inventory = products.map((product) => {
+    // Calculate packet counts for all products
+    let inventory = products.map((product) => {
       const packetCount = convertToPackets(
         product.stockQuantity,
         product.packetQuantity,
         product.stockUnit
       );
-
       return {
         name: product.name,
         value: packetCount + 2,
         unit: 'packets',
       };
     });
-    ///calculation errors fix that from backend
-    console.log(inventory);
-    setInventoryData(inventory);
+
+    // Sort by value descending and take top 10
+    inventory.sort((a, b) => b.value - a.value);
+    const topInventory = inventory.slice(0, 200);
+
+    // Aggregate remaining products into "Others"
+    const others = inventory.slice(10).reduce(
+      (acc, curr) => ({
+        name: 'Others',
+        value: acc.value + curr.value,
+        unit: 'packets',
+      }),
+      { name: 'Others', value: 0, unit: 'packets' }
+    );
+
+    // Add "Others" if it has value
+    if (others.value > 0) {
+      topInventory.push(others);
+    }
+
+    setInventoryData(topInventory);
   };
 
   const calculateTotalSales = (products, productId) => {
     let total = 0;
-
     if (productId === 'all') {
       products.forEach((product) => {
         const soldPackets = product.soldPackets || 0;
@@ -127,7 +135,6 @@ const Dashboard = () => {
         total = soldPackets * packetPrice;
       }
     }
-
     setTotalSales(total);
   };
 
@@ -140,7 +147,6 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchData();
-
     const interval = setInterval(fetchData, 10000);
     return () => clearInterval(interval);
   }, [selectedProduct]);
@@ -158,62 +164,84 @@ const Dashboard = () => {
       '#e74c3c',
       '#2ecc71',
       '#3498db',
-      '#9b59b6',
     ];
     return colors[index % colors.length];
   };
 
+  // Custom Legend Component
+  const CustomLegend = ({ payload }) => {
+    return (
+      <div
+        className='max-h-48 overflow-y-auto bg-white p-4 rounded-lg shadow-md border border-gray-200'
+        style={{ scrollbarWidth: 'thin' }}
+      >
+        <ul className='space-y-2'>
+          {payload.map((entry, index) => (
+            <li
+              key={`item-${index}`}
+              className='flex items-center space-x-2 text-sm hover:bg-gray-100 p-1 rounded transition-colors duration-200'
+            >
+              <span
+                className='w-4 h-4 rounded-full'
+                style={{ backgroundColor: entry.color }}
+              />
+              <span className='text-gray-700'>{entry.value}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+
   return (
-    <div className="p-6">
-      <div className="flex justify-between mb-8">
-        <div className="bg-blue-100 p-6 rounded-lg shadow-md w-1/3 text-center">
-          <FaBox className="text-4xl text-blue-600 mb-4" />
-          <h3 className="text-lg font-semibold text-gray-700">
+    <div className='p-6'>
+      <div className='flex justify-between mb-8'>
+        <div className='bg-blue-100 p-6 rounded-lg shadow-md w-1/3 text-center'>
+          <FaBox className='text-4xl text-blue-600 mb-4' />
+          <h3 className='text-lg font-semibold text-gray-700'>
             Total Products
           </h3>
-          <p className="text-2xl font-bold text-blue-600">{totalProducts}</p>
+          <p className='text-2xl font-bold text-blue-600'>{totalProducts}</p>
         </div>
-
-        <div className="bg-green-100 p-6 rounded-lg shadow-md w-1/3 text-center">
-          <FaDollarSign className="text-4xl text-green-600 mb-4" />
-          <h3 className="text-lg font-semibold text-gray-700">
+        <div className='bg-green-100 p-6 rounded-lg shadow-md w-1/3 text-center'>
+          <FaDollarSign className='text-4xl text-green-600 mb-4' />
+          <h3 className='text-lg font-semibold text-gray-700'>
             Total Sales (₹)
           </h3>
-          <p className="text-2xl font-bold text-green-600">₹{totalSales}</p>
+          <p className='text-2xl font-bold text-green-600'>₹{totalSales}</p>
         </div>
-
-        <div className="bg-yellow-100 p-6 rounded-lg shadow-md w-1/3 text-center">
-          <FaUsers className="text-4xl text-yellow-600 mb-4" />
-          <h3 className="text-lg font-semibold text-gray-700">
+        <div className='bg-yellow-100 p-6 rounded-lg shadow-md w-1/3 text-center'>
+          <FaUsers className='text-4xl text-yellow-600 mb-4' />
+          <h3 className='text-lg font-semibold text-gray-700'>
             Total Customers
           </h3>
-          <p className="text-2xl font-bold text-yellow-600">{totalCustomers}</p>
+          <p className='text-2xl font-bold text-yellow-600'>{totalCustomers}</p>
         </div>
       </div>
 
-      <div className="flex justify-between">
-        <div className="w-2/3">
-          <h1 className="text-center text-2xl font-semibold mb-4">
+      <div className='flex justify-between'>
+        <div className='w-2/3'>
+          <h1 className='text-center text-2xl font-semibold mb-4'>
             Monthly Sales Overview
           </h1>
           {isLoading ? (
-            <p className="text-center">Loading...</p>
+            <p className='text-center'>Loading...</p>
           ) : (
             <>
-              <div className="mb-6 text-center">
+              <div className='mb-6 text-center'>
                 <label
-                  htmlFor="productSelect"
-                  className="mr-2 text-lg text-gray-700"
+                  htmlFor='productSelect'
+                  className='mr-2 text-lg text-gray-700'
                 >
                   Select Product:
                 </label>
                 <select
-                  id="productSelect"
+                  id='productSelect'
                   value={selectedProduct}
                   onChange={handleProductChange}
-                  className="p-2 border border-gray-300 rounded-lg"
+                  className='p-2 border border-gray-300 rounded-lg'
                 >
-                  <option value="all">All Products</option>
+                  <option value='all'>All Products</option>
                   {products.map((product) => (
                     <option key={product._id} value={product._id}>
                       {product.name}
@@ -221,37 +249,36 @@ const Dashboard = () => {
                   ))}
                 </select>
               </div>
-
-              <ResponsiveContainer width="100%" height={400}>
+              <ResponsiveContainer width='100%' height={400}>
                 <BarChart
                   data={chartData}
                   margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
                 >
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="month" />
+                  <CartesianGrid strokeDasharray='3 3' />
+                  <XAxis dataKey='month' />
                   <YAxis />
                   <BarChartTooltip />
-                  <Bar dataKey="soldPackets" fill="#8884d8" />
+                  <Bar dataKey='soldPackets' fill='#8884d8' />
                 </BarChart>
               </ResponsiveContainer>
             </>
           )}
         </div>
 
-        <div className="w-1/3 pl-6">
-          <h2 className="text-center text-xl font-semibold mb-4">
+        <div className='w-1/3 pl-6'>
+          <h2 className='text-center text-xl font-semibold mb-4'>
             Product Inventory
           </h2>
-          <ResponsiveContainer width="100%" height={400}>
+          <ResponsiveContainer width='100%' height={400}>
             <PieChart>
               <Pie
                 data={inventoryData}
-                dataKey="value"
-                nameKey="name"
-                cx="50%"
-                cy="50%"
-                outerRadius="80%"
-                fill="#82ca9d"
+                dataKey='value'
+                nameKey='name'
+                cx='50%'
+                cy='50%'
+                outerRadius='80%'
+                fill='#82ca9d'
               >
                 {inventoryData.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={generateColor(index)} />
@@ -262,9 +289,9 @@ const Dashboard = () => {
                   if (active && payload && payload.length) {
                     const { name, value, unit } = payload[0].payload;
                     return (
-                      <div className="bg-white p-4 border border-gray-300">
-                        <h4>{name}</h4>
-                        <p>
+                      <div className='bg-white p-4 border border-gray-300 rounded-lg shadow-sm'>
+                        <h4 className='font-semibold'>{name}</h4>
+                        <p className='text-sm'>
                           Quantity: {value} {unit}
                         </p>
                       </div>
@@ -273,7 +300,11 @@ const Dashboard = () => {
                   return null;
                 }}
               />
-              <Legend verticalAlign="bottom" />
+              <Legend
+                content={<CustomLegend />}
+                verticalAlign='top'
+                align='center'
+              />
             </PieChart>
           </ResponsiveContainer>
         </div>
