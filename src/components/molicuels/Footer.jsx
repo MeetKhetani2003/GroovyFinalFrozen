@@ -73,7 +73,7 @@ const Footer = () => {
                 onClick={handleMenuClick}
                 className='border-r border-white lg:px-8 px-2 hover:text-main text-white text-center font-montserrat'
               >
-                Menu
+                Download Brochure
               </button>
               <Link
                 to='/about'

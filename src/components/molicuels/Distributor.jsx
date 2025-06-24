@@ -1,3 +1,6 @@
+import axios from 'axios';
+import { useState } from 'react';
+
 import { toast } from '@/hooks/use-toast';
 import { useDistributor } from '@/zustand/apis/distributorState';
 
@@ -20,14 +23,57 @@ const InputData = ({ label, onChange, type, placeholder, name, value }) => {
 };
 
 const Distributor = () => {
-  const { distributor, setDistributor } = useDistributor();
+  const [distributor, setDistributor] = useState({
+    name: '',
+    mobileNo: '',
+    email: '',
+    address: '',
+    message: '',
+  });
 
-  const handleSubmit = (event) => {
+  // Assuming useDistributor provides a method to update store
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setDistributor((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    toast({
-      title: 'Application Submitted Successfully',
-    });
-    console.log('Distributor Data:', distributor);
+    try {
+      const response = await axios.post(
+        'https://groovy-frozen.onrender.com/api/v1/distributors/create',
+        distributor
+      );
+
+      if (response.status === 201) {
+        // Optionally update Zustand store
+        // addDistributor(response.data.data);
+        toast({
+          title: 'Application Submitted Successfully',
+          variant: 'success',
+        });
+        // Reset form after successful submission
+        setDistributor({
+          name: '',
+          mobileNo: '',
+          email: '',
+          address: '',
+          message: '',
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting distributor data:', error);
+      toast({
+        title: 'Error submitting distributor data',
+        description:
+          error.response?.data?.message || 'An unexpected error occurred',
+        variant: 'destructive',
+      });
+    }
   };
 
   return (
@@ -42,7 +88,7 @@ const Distributor = () => {
           placeholder='Enter your name'
           name='name'
           value={distributor.name}
-          onChange={(e) => setDistributor({ name: e.target.value })}
+          onChange={handleChange}
         />
         <InputData
           label='Mobile No'
@@ -50,7 +96,7 @@ const Distributor = () => {
           placeholder='Enter your mobile number'
           name='mobileNo'
           value={distributor.mobileNo}
-          onChange={(e) => setDistributor({ mobileNo: e.target.value })}
+          onChange={handleChange}
         />
         <InputData
           label='Email'
@@ -58,7 +104,7 @@ const Distributor = () => {
           placeholder='Enter your email'
           name='email'
           value={distributor.email}
-          onChange={(e) => setDistributor({ email: e.target.value })}
+          onChange={handleChange}
         />
         <InputData
           label='Address'
@@ -66,7 +112,7 @@ const Distributor = () => {
           placeholder='Enter your address'
           name='address'
           value={distributor.address}
-          onChange={(e) => setDistributor({ address: e.target.value })}
+          onChange={handleChange}
         />
         <div className='mb-3'>
           <label className='block text-sm text-gray-700 mb-1'>Message</label>
@@ -74,7 +120,7 @@ const Distributor = () => {
             name='message'
             placeholder='Enter your message'
             value={distributor.message}
-            onChange={(e) => setDistributor({ message: e.target.value })}
+            onChange={handleChange}
             className='block w-full px-2 py-1 border rounded focus:outline-none focus:ring focus:ring-green-500'
             rows='3'
           ></textarea>

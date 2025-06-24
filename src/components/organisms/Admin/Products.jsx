@@ -548,6 +548,7 @@ const Products = () => {
                 value={formData.form ?? ''}
                 onChange={(e) => handleInputChange('form', e.target.value)}
               />
+
               <input
                 type='file'
                 accept='image/*'
