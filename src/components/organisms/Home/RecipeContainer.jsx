@@ -29,7 +29,7 @@ const recipes = [
   },
   {
     videoId: 'zCNpkQphvDw',
-    heading: 'Ready to Eat Paneet Lababdar',
+    heading: 'Ready to Eat Paneer Lababdar',
     // description: '2021-08-27  No Comments',
   },
 ];

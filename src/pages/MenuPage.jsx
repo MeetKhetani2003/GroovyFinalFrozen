@@ -8,6 +8,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination';
+import axios from 'axios';
 import { debounce } from 'lodash';
 import { SearchIcon } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
@@ -55,6 +56,48 @@ const Menu = () => {
     }
   };
 
+  // Fetch categories from the backend
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await axios.get(
+          'https://groovy-frozen.onrender.com/api/v1/products/categories'
+        );
+        const fetchedCategories = response.data.data.categories || [];
+        // Remove "All Categories" from fetched categories to avoid duplication
+        const filteredCategories = fetchedCategories.filter(
+          (category) => category !== 'All Categories'
+        );
+        setCategories(['All Categories', ...filteredCategories]);
+        console.log('Categories set:', [
+          'All Categories',
+          ...filteredCategories,
+        ]);
+      } catch (error) {
+        console.error('Error fetching categories:', error);
+        // Fallback to hardcoded categories
+        setCategories([
+          'All Categories',
+          'Ready to Eat Gujarati Sabji',
+          'Ready to Eat North Indian Sabji',
+          'Ready to Eat Rice',
+          'Ready to Eat Dal',
+          'Ready to Eat Soup',
+          'Ready to Eat South Special',
+          'Ready to Cook Tava Special',
+          'Ready to Cook Gravy Base',
+          'Ready to Cook Snacks',
+          'Ready to Cook Starters',
+          'Sauces',
+          'Dried Powder',
+          'Spices And Masala',
+        ]);
+      }
+    };
+
+    fetchCategories();
+  }, []);
+
   useEffect(() => {
     const queryParams = new URLSearchParams(window.location.search);
     const initialCategory = queryParams.get('category') || 'All Categories';
@@ -68,22 +111,6 @@ const Menu = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setCategories([
-      'All Categories',
-      'Ready to Eat Gujarati Sabji',
-      'Ready to Eat North Indian Sabji',
-      'Ready to Eat Rice',
-      'Ready to Eat Dal',
-      'Ready to Eat Soup',
-      'Ready to Eat South Special',
-      'Ready to Cook Tava Special',
-      'Ready to Cook Gravy Base',
-      'Ready to Cook Snacks',
-      'Ready to Cook Starters',
-      'Sauces',
-      'Dried Powder',
-      'Spices And Masala',
-    ]);
   }, []);
 
   useEffect(() => {
@@ -106,7 +133,6 @@ const Menu = () => {
       }
     };
 
-    // Only fetch products if the category or search term has changed
     if (filters.category || filters.search) {
       fetchProducts();
     }
