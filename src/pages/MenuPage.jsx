@@ -61,7 +61,7 @@ const Menu = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          'https://groovy-frozen.onrender.com/api/v1/products/categories'
+          'https://groovy-frozen-server.onrender.com/api/v1/products/categories'
         );
         const fetchedCategories = response.data.data.categories || [];
         // Remove "All Categories" from fetched categories to avoid duplication
@@ -77,20 +77,20 @@ const Menu = () => {
         console.error('Error fetching categories:', error);
         // Fallback to hardcoded categories
         setCategories([
-          'All Categories',
-          'Ready to Eat Gujarati Sabji',
-          'Ready to Eat North Indian Sabji',
-          'Ready to Eat Rice',
-          'Ready to Eat Dal',
-          'Ready to Eat Soup',
-          'Ready to Eat South Special',
-          'Ready to Cook Tava Special',
-          'Ready to Cook Gravy Base',
-          'Ready to Cook Snacks',
-          'Ready to Cook Starters',
-          'Sauces',
-          'Dried Powder',
-          'Spices And Masala',
+          "All Categories",
+" READY TO COOK SOUP",
+"DAL",
+"DRIED POWDER",
+"GUJARATI READY TO EAT SUBJI",
+"Indian Ready to Eat Sabji",
+"READY TO COOK SNACKS",
+"READY TO EAT RICE",
+"Ready to Cook Gravy Base",
+"Ready to Eat South Special",
+"SPICES AND MASALA",
+"STARTER",
+"Sauces",
+"TAVA SPECIAL",
         ]);
       }
     };
