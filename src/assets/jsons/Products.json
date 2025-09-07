@@ -13,10 +13,10 @@
     "boxQuantity": 12,
     "category": "Sauces",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SAUCE/SAUCE/BURGER SAUCE.png",
+    "thumbnail": "/products/SAUCE/SAUCE/BURGER SAUCE.png",
     "detailedImages": [
-      "/public/products/SAUCE/SAUCE/BURGER SAUCE.png",
-      "/public/products/SAUCE/SAUCE/BURGER SAUCE.png"
+      "/products/SAUCE/SAUCE/BURGER SAUCE.png",
+      "/products/SAUCE/SAUCE/BURGER SAUCE.png"
     ],
     "packagingType": "Jar",
     "friesType": "NA",
@@ -53,10 +53,10 @@
     "boxQuantity": 12,
     "category": "Sauces",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SAUCE/SAUCE/GARLIC MAYO.png",
+    "thumbnail": "/products/SAUCE/SAUCE/GARLIC MAYO.png",
     "detailedImages": [
-      "/public/products/SAUCE/SAUCE/GARLIC MAYO.png",
-      "/public/products/SAUCE/SAUCE/GARLIC MAYO.png"
+      "/products/SAUCE/SAUCE/GARLIC MAYO.png",
+      "/products/SAUCE/SAUCE/GARLIC MAYO.png"
     ],
     "packagingType": "Jar",
     "friesType": "NA",
@@ -93,10 +93,10 @@
     "boxQuantity": 10,
     "category": "Sauces",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SAUCE/SAUCE/ITALIAN SAUCE.png",
+    "thumbnail": "/products/SAUCE/SAUCE/ITALIAN SAUCE.png",
     "detailedImages": [
-      "/public/products/SAUCE/SAUCE/ITALIAN SAUCE.png",
-      "/public/products/SAUCE/SAUCE/ITALIAN SAUCE.png"
+      "/products/SAUCE/SAUCE/ITALIAN SAUCE.png",
+      "/products/SAUCE/SAUCE/ITALIAN SAUCE.png"
     ],
     "packagingType": "GLASS BOTTLE",
     "friesType": "NA",
@@ -133,10 +133,10 @@
     "boxQuantity": 12,
     "category": "Sauces",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SAUCE/SAUCE/SAMOSA CHUTNEY.png",
+    "thumbnail": "/products/SAUCE/SAUCE/SAMOSA CHUTNEY.png",
     "detailedImages": [
-      "/public/products/SAUCE/SAUCE/SAMOSA CHUTNEY.png",
-      "/public/products/SAUCE/SAUCE/SAMOSA CHUTNEY.png"
+      "/products/SAUCE/SAUCE/SAMOSA CHUTNEY.png",
+      "/products/SAUCE/SAUCE/SAMOSA CHUTNEY.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -173,10 +173,10 @@
     "boxQuantity": 12,
     "category": "Sauces",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SAUCE/SAUCE/RESHMI KABAB MARINATION.png",
+    "thumbnail": "/products/SAUCE/SAUCE/RESHMI KABAB MARINATION.png",
     "detailedImages": [
-      "/public/products/SAUCE/SAUCE/RESHAMI KABAB MARINATION.png",
-      "/public/products/SAUCE/SAUCE/RESHAMI KABAB MARINATION.png"
+      "/products/SAUCE/SAUCE/RESHAMI KABAB MARINATION.png",
+      "/products/SAUCE/SAUCE/RESHAMI KABAB MARINATION.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -213,10 +213,10 @@
     "boxQuantity": 12,
     "category": "Sauces",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SAUCE/SAUCE/TANDOORI MARINATION.png",
+    "thumbnail": "/products/SAUCE/SAUCE/TANDOORI MARINATION.png",
     "detailedImages": [
-      "/public/products/SAUCE/SAUCE/TANDOORI MARINATION.png",
-      "/public/products/SAUCE/SAUCE/TANDOORI MARINATION.png"
+      "/products/SAUCE/SAUCE/TANDOORI MARINATION.png",
+      "/products/SAUCE/SAUCE/TANDOORI MARINATION.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -253,10 +253,8 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/GRAVY DONE/GRAVY DONE/YELLOW GRAVY.JPG",
-    "detailedImages": [
-      "/public/products/GRAVY DONE/GRAVY DONE/YELLOW GRAVY.JPG"
-    ],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/YELLOW GRAVY.JPG",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/YELLOW GRAVY.JPG"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -292,8 +290,8 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/GRAVY DONE/GRAVY DONE/RED GRAVY.JPG",
-    "detailedImages": ["/public/products/GRAVY DONE/GRAVY DONE/RED GRAVY.JPG"],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/RED GRAVY.JPG",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/RED GRAVY.JPG"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -329,11 +327,11 @@
     "boxQuantity": 20,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY.JPG",
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY.JPG",
     "detailedImages": [
-      "/public/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 1.JPG",
-      "/public/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 2.JPG",
-      "/public/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 3.JPG"
+      "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 1.JPG",
+      "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 2.JPG",
+      "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 3.JPG"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -370,10 +368,10 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG",
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG",
     "detailedImages": [
-      "/public/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG",
-      "/public/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG"
+      "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG",
+      "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -410,10 +408,10 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG",
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG",
     "detailedImages": [
-      "/public/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG",
-      "/public/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG"
+      "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG",
+      "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -450,10 +448,8 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/GRAVY DONE/GRAVY DONE/JAIN CHOP GRAVY.JPG",
-    "detailedImages": [
-      "/public/products/GRAVY DONE/GRAVY DONE/JAIN CHOP GRAVY.JPG"
-    ],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/JAIN CHOP GRAVY.JPG",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/JAIN CHOP GRAVY.JPG"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -489,10 +485,8 @@
     "boxQuantity": 20,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/GRAVY DONE/GRAVY DONE/PALAK GRAVY.JPG",
-    "detailedImages": [
-      "/public/products/GRAVY DONE/GRAVY DONE/PALAK GRAVY 1.JPG"
-    ],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/PALAK GRAVY.JPG",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/PALAK GRAVY 1.JPG"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -528,9 +522,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER MAKHANI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER MAKHANI.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER MAKHANI 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER MAKHANI 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -567,9 +561,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER PANEER.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER PANEER.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER PANEER.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER PANEER.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -606,9 +600,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KADAI PANEER.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KADAI PANEER.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KADAI PANEER.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KADAI PANEER.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -645,9 +639,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PALAK PANEER.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PALAK PANEER.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PALAK PANEER.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PALAK PANEER.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -684,9 +678,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER TIKKA MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER TIKKA MASALA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER TIKKA MASALA.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER TIKKA MASALA.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -723,9 +717,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BHURJI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BHURJI.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BHURJI.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BHURJI.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -762,9 +756,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER LABABDAR.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER LABABDAR.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER LABABDAR.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER LABABDAR.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -801,9 +795,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER METHI MALAI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER METHI MALAI.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER METHI MALAI.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER METHI MALAI.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -840,9 +834,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/VEG KOFTA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/VEG KOFTA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/VEG KOFTA 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/VEG KOFTA 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -879,10 +873,10 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA.JPG",
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA.JPG",
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -919,9 +913,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KASHMIRI DUM ALOO.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KASHMIRI DUM ALOO.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KASHMIRI DUM ALOO.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KASHMIRI DUM ALOO.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -958,9 +952,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/BANARASI DUM ALOO.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/BANARASI DUM ALOO.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/BANARASI DUM ALOO.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/BANARASI DUM ALOO.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -997,9 +991,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/RAJMA MASALA 2.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/RAJMA MASALA 2.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/RAJMA MASALA 2.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/RAJMA MASALA 2.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1036,10 +1030,10 @@
     "boxQuantity": 10,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 1.JPG",
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 2.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 1.JPG",
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 2.JPG"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -1076,10 +1070,10 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 2.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 2.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA .JPG",
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA .JPG",
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1116,9 +1110,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOLHAPURI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOLHAPURI.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOLHAPURI 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOLHAPURI 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1155,9 +1149,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER METHI MALAI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER METHI MALAI.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER METHI MALAI 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER METHI MALAI 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1194,10 +1188,10 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (1).JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (1).JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (1).JPG",
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (2).JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (1).JPG",
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (2).JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1234,10 +1228,10 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI 1.JPG",
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI 1.JPG",
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1274,10 +1268,10 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA 1.JPG",
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA 1.JPG",
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1314,10 +1308,10 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA.JPG",
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA 1.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA.JPG",
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1354,10 +1348,10 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA.JPG",
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA 1.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA.JPG",
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1394,9 +1388,9 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/GREEN MUG MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/GREEN MUG MASALA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/GREEN MUG MASALA.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/GREEN MUG MASALA.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1433,10 +1427,10 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA.JPG",
-      "/public/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA 1.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA.JPG",
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA 1.JPG"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1473,8 +1467,8 @@
     "boxQuantity": 10,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/DAL/DAL DONE/YELLOW DAL.JPG",
-    "detailedImages": ["/public/products/DAL/DAL DONE/YELLOW DAL.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/YELLOW DAL.JPG",
+    "detailedImages": ["/products/DAL/DAL DONE/YELLOW DAL.JPG"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1510,8 +1504,8 @@
     "boxQuantity": 24,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/DAL/DAL DONE/YELLOW DAL.JPG",
-    "detailedImages": ["/public/products/DAL/DAL DONE/YELLOW DAL.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/YELLOW DAL.JPG",
+    "detailedImages": ["/products/DAL/DAL DONE/YELLOW DAL.JPG"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1547,8 +1541,8 @@
     "boxQuantity": 24,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/DAL/DAL DONE/DAL MAKHANI.JPG",
-    "detailedImages": ["/public/products/DAL/DAL DONE/DAL MAKHANI.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/DAL MAKHANI.JPG",
+    "detailedImages": ["/products/DAL/DAL DONE/DAL MAKHANI.JPG"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1584,8 +1578,8 @@
     "boxQuantity": 10,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/DAL/DAL DONE/DAL MAKHANI.JPG",
-    "detailedImages": ["/public/products/DAL/DAL DONE/DAL MAKHANI.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/DAL MAKHANI.JPG",
+    "detailedImages": ["/products/DAL/DAL DONE/DAL MAKHANI.JPG"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1621,8 +1615,8 @@
     "boxQuantity": 24,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/DAL/DAL DONE/DAL KHICHADI.JPG",
-    "detailedImages": ["/public/products/DAL/DAL DONE/DAL KHICHADI.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/DAL KHICHADI.JPG",
+    "detailedImages": ["/products/DAL/DAL DONE/DAL KHICHADI.JPG"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1658,8 +1652,8 @@
     "boxQuantity": 24,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/DAL/DAL DONE/SABUDANA KHICHADI.JPG",
-    "detailedImages": ["/public/products/DAL/DAL DONE/SABUDANA KHICHADI.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/SABUDANA KHICHADI.JPG",
+    "detailedImages": ["/products/DAL/DAL DONE/SABUDANA KHICHADI.JPG"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1695,8 +1689,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snakcs 01.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/Snakcs 01.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/Snakcs 01.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snakcs 01.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -1732,8 +1726,8 @@
     "boxQuantity": 24,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK SNACKS",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snakcs 01.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/Snakcs 01.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/Snakcs 01.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snakcs 01.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -1769,8 +1763,8 @@
     "boxQuantity": 24,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snakcs 01.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/Snakcs 01.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/Snakcs 01.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snakcs 01.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -1806,10 +1800,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -1845,10 +1837,10 @@
     "boxQuantity": 24,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
+    "thumbnail": "/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
     "detailedImages": [
-      "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
-      "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png"
+      "/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
+      "/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1885,8 +1877,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/italian pizza.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/italian pizza.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/italian pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/italian pizza.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -1922,10 +1914,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/triple cheese pizza.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/triple cheese pizza.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/triple cheese pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/triple cheese pizza.png"],
     "packagingType": "WRAPPED",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -1961,10 +1951,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/triple cheese pizza.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/triple cheese pizza.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/triple cheese pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/triple cheese pizza.png"],
     "packagingType": "WRAPPED",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2000,8 +1988,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/cheese corn pizza.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/cheese corn pizza.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/cheese corn pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/cheese corn pizza.png"],
     "packagingType": "WRAPPED",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2037,8 +2025,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/cheese corn pizza.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/cheese corn pizza.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/cheese corn pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/cheese corn pizza.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2074,9 +2062,9 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/chilli garlic mashroom pizza.png",
+    "thumbnail": "/products/SNACKS/SNACKS/chilli garlic mashroom pizza.png",
     "detailedImages": [
-      "/public/products/SNACKS/SNACKS/chilli garlic mashroom pizza.png"
+      "/products/SNACKS/SNACKS/chilli garlic mashroom pizza.png"
     ],
     "packagingType": "WRAPPED",
     "friesType": "NA",
@@ -2113,9 +2101,9 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/chilli garlic mashroom pizza.png",
+    "thumbnail": "/products/SNACKS/SNACKS/chilli garlic mashroom pizza.png",
     "detailedImages": [
-      "/public/products/SNACKS/SNACKS/chilli garlic mashroom pizza.png"
+      "/products/SNACKS/SNACKS/chilli garlic mashroom pizza.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -2152,10 +2140,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/vege pineapple pizza.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/vege pineapple pizza.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/vege pineapple pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/vege pineapple pizza.png"],
     "packagingType": "WRAPPED",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2191,10 +2177,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/vege pineapple pizza.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/vege pineapple pizza.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/vege pineapple pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/vege pineapple pizza.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2230,10 +2214,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/tandoori paneer pizza.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/tandoori paneer pizza.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/tandoori paneer pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/tandoori paneer pizza.png"],
     "packagingType": "WRAPPED",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2269,10 +2251,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/tandoori paneer pizza.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/tandoori paneer pizza.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/tandoori paneer pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/tandoori paneer pizza.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2308,8 +2288,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Garlig bread 01.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/Garlig bread 01.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/Garlig bread 01.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Garlig bread 01.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2345,8 +2325,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Garlig bread 02.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/Garlig bread 01.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/Garlig bread 02.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Garlig bread 01.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2382,10 +2362,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snacks 210x330 mm.psd.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/Snacks 210x330 mm.psd.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/Snacks 210x330 mm.psd.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snacks 210x330 mm.psd.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2421,10 +2399,8 @@
     "boxQuantity": 20,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snacks 175x235mm.psd.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/Snacks 175x235mm.psd.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/Snacks 175x235mm.psd.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snacks 175x235mm.psd.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2460,8 +2436,8 @@
     "boxQuantity": 24,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snakcs 06.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/Snakcs 06.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/Snakcs 06.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snakcs 06.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2497,8 +2473,8 @@
     "boxQuantity": 24,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snakcs 04.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/Snakcs 04.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/Snakcs 04.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snakcs 04.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2534,10 +2510,8 @@
     "boxQuantity": 24,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2573,10 +2547,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
-    "detailedImages": [
-      "/public/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png"
-    ],
+    "thumbnail": "/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snacks 190x310mm 03.psd.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -2612,10 +2584,8 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/01 Starter Aloo Samosa.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/01 Starter Aloo Samosa.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/01 Starter Aloo Samosa.png",
+    "detailedImages": ["/products/STARTER/STARTER/01 Starter Aloo Samosa.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -2651,10 +2621,8 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/01 Starter Aloo Samosa.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/01 Starter Aloo Samosa.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/01 Starter Aloo Samosa.png",
+    "detailedImages": ["/products/STARTER/STARTER/01 Starter Aloo Samosa.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -2690,10 +2658,8 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/02 Starter Jain Samosa.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/02 Starter Jain Samosa.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/02 Starter Jain Samosa.png",
+    "detailedImages": ["/products/STARTER/STARTER/02 Starter Jain Samosa.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -2729,10 +2695,8 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/02 Starter Jain Samosa.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/02 Starter Jain Samosa.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/02 Starter Jain Samosa.png",
+    "detailedImages": ["/products/STARTER/STARTER/02 Starter Jain Samosa.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -2768,10 +2732,8 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/03 Starter Cheese Ball.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/03 Starter Cheese Ball.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/03 Starter Cheese Ball.png",
+    "detailedImages": ["/products/STARTER/STARTER/03 Starter Cheese Ball.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -2807,10 +2769,8 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/03 Starter Cheese Ball.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/03 Starter Cheese Ball.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/03 Starter Cheese Ball.png",
+    "detailedImages": ["/products/STARTER/STARTER/03 Starter Cheese Ball.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -2846,9 +2806,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/04 Starter Cheese Ball Jain.png",
+    "thumbnail": "/products/STARTER/STARTER/04 Starter Cheese Ball Jain.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/04 Starter Cheese Ball Jain.png"
+      "/products/STARTER/STARTER/04 Starter Cheese Ball Jain.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -2885,9 +2845,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/04 Starter Cheese Ball Jain.png",
+    "thumbnail": "/products/STARTER/STARTER/04 Starter Cheese Ball Jain.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/04 Starter Cheese Ball Jain.png"
+      "/products/STARTER/STARTER/04 Starter Cheese Ball Jain.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -2924,9 +2884,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/05 Starter Cheese chilli Nug. Jain.png",
+    "thumbnail": "/products/STARTER/STARTER/05 Starter Cheese chilli Nug. Jain.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/05 Starter Cheese chilli Nug. Jain.png"
+      "/products/STARTER/STARTER/05 Starter Cheese chilli Nug. Jain.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -2963,9 +2923,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/05 Starter Cheese chilli Nug. Jain.png",
+    "thumbnail": "/products/STARTER/STARTER/05 Starter Cheese chilli Nug. Jain.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/05 Starter Cheese chilli Nug. Jain.png"
+      "/products/STARTER/STARTER/05 Starter Cheese chilli Nug. Jain.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3002,9 +2962,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/06 Starter Paneer Papad Crispy Jain.png",
+    "thumbnail": "/products/STARTER/STARTER/06 Starter Paneer Papad Crispy Jain.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/06 Starter Paneer Papad Crispy Jain.png"
+      "/products/STARTER/STARTER/06 Starter Paneer Papad Crispy Jain.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3041,9 +3001,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/08 Starter Veg. Burger Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/08 Starter Veg. Burger Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/08 Starter Veg. Burger Tikki.png"
+      "/products/STARTER/STARTER/08 Starter Veg. Burger Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3080,9 +3040,9 @@
     "boxQuantity": 14,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/08 Starter Veg. Burger Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/08 Starter Veg. Burger Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/08 Starter Veg. Burger Tikki.png"
+      "/products/STARTER/STARTER/08 Starter Veg. Burger Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3119,9 +3079,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/09 Starter Jain Burger Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/09 Starter Jain Burger Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/09 Starter Jain Burger Tikki.png"
+      "/products/STARTER/STARTER/09 Starter Jain Burger Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3158,9 +3118,9 @@
     "boxQuantity": 14,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/09 Starter Jain Burger Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/09 Starter Jain Burger Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/09 Starter Jain Burger Tikki.png"
+      "/products/STARTER/STARTER/09 Starter Jain Burger Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3197,9 +3157,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/10 Starter Sabudana Vada.png",
+    "thumbnail": "/products/STARTER/STARTER/10 Starter Sabudana Vada.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/10 Starter Sabudana Vada.png"
+      "/products/STARTER/STARTER/10 Starter Sabudana Vada.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3236,9 +3196,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/12 Starter Vadapav Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/12 Starter Vadapav Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/12 Starter Vadapav Tikki.png"
+      "/products/STARTER/STARTER/12 Starter Vadapav Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3275,9 +3235,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/11 Starter Crispy Paneer Burger Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/11 Starter Crispy Paneer Burger Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/11 Starter Crispy Paneer Burger Tikki.png"
+      "/products/STARTER/STARTER/11 Starter Crispy Paneer Burger Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3314,9 +3274,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/13 Starter Aloo Tikki Burger.png",
+    "thumbnail": "/products/STARTER/STARTER/13 Starter Aloo Tikki Burger.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/13 Starter Aloo Tikki Burger.png"
+      "/products/STARTER/STARTER/13 Starter Aloo Tikki Burger.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3353,9 +3313,9 @@
     "boxQuantity": 14,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/13 Starter Aloo Tikki Burger.png",
+    "thumbnail": "/products/STARTER/STARTER/13 Starter Aloo Tikki Burger.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/13 Starter Aloo Tikki Burger.png"
+      "/products/STARTER/STARTER/13 Starter Aloo Tikki Burger.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3392,9 +3352,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/14 Starter Sabudanan Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/14 Starter Sabudanan Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/14 Starter Sabudanan Tikki.png"
+      "/products/STARTER/STARTER/14 Starter Sabudanan Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3431,9 +3391,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/14 Starter Sabudanan Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/14 Starter Sabudanan Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/14 Starter Sabudanan Tikki.png"
+      "/products/STARTER/STARTER/14 Starter Sabudanan Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3470,10 +3430,8 @@
     "boxQuantity": 25,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/15 Starter Bread Pakoda.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/15 Starter Bread Pakoda.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/15 Starter Bread Pakoda.png",
+    "detailedImages": ["/products/STARTER/STARTER/15 Starter Bread Pakoda.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -3509,9 +3467,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/16 Starter Cheese Paneer Cutlet.png",
+    "thumbnail": "/products/STARTER/STARTER/16 Starter Cheese Paneer Cutlet.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/16 Starter Cheese Paneer Cutlet.png"
+      "/products/STARTER/STARTER/16 Starter Cheese Paneer Cutlet.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3548,9 +3506,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/16 Starter Cheese Paneer Cutlet.png",
+    "thumbnail": "/products/STARTER/STARTER/16 Starter Cheese Paneer Cutlet.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/16 Starter Cheese Paneer Cutlet.png"
+      "/products/STARTER/STARTER/16 Starter Cheese Paneer Cutlet.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3587,9 +3545,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/17 Starter Corn Palak Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/17 Starter Corn Palak Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/17 Starter Corn Palak Tikki.png"
+      "/products/STARTER/STARTER/17 Starter Corn Palak Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3626,9 +3584,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/17 Starter Corn Palak Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/17 Starter Corn Palak Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/17 Starter Corn Palak Tikki.png"
+      "/products/STARTER/STARTER/17 Starter Corn Palak Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3665,9 +3623,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/19 Starter Sweet Potato Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/19 Starter Sweet Potato Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/19 Starter Sweet Potato Tikki.png"
+      "/products/STARTER/STARTER/19 Starter Sweet Potato Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3704,9 +3662,9 @@
     "boxQuantity": 14,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/19 Starter Sweet Potato Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/19 Starter Sweet Potato Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/19 Starter Sweet Potato Tikki.png"
+      "/products/STARTER/STARTER/19 Starter Sweet Potato Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3743,9 +3701,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/18 Starter Manchuriyan Balls.png",
+    "thumbnail": "/products/STARTER/STARTER/18 Starter Manchuriyan Balls.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/18 Starter Manchuriyan Balls.png"
+      "/products/STARTER/STARTER/18 Starter Manchuriyan Balls.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3782,9 +3740,9 @@
     "boxQuantity": 24,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/01 Starter Veg. Manchurian Box.png",
+    "thumbnail": "/products/STARTER/STARTER/01 Starter Veg. Manchurian Box.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/01 Starter Veg. Manchurian Box.png"
+      "/products/STARTER/STARTER/01 Starter Veg. Manchurian Box.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -3821,9 +3779,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/20 Starter Chanachor Kabab.png",
+    "thumbnail": "/products/STARTER/STARTER/20 Starter Chanachor Kabab.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/20 Starter Chanachor Kabab.png"
+      "/products/STARTER/STARTER/20 Starter Chanachor Kabab.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3860,9 +3818,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/20 Starter Chanachor Kabab.png",
+    "thumbnail": "/products/STARTER/STARTER/20 Starter Chanachor Kabab.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/20 Starter Chanachor Kabab.png"
+      "/products/STARTER/STARTER/20 Starter Chanachor Kabab.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -3899,10 +3857,8 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/21 Starter Corn Tikki.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/21 Starter Corn Tikki.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/21 Starter Corn Tikki.png",
+    "detailedImages": ["/products/STARTER/STARTER/21 Starter Corn Tikki.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -3938,10 +3894,8 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/21 Starter Corn Tikki.png",
-    "detailedImages": [
-      "/public/products/STARTER/STARTER/21 Starter Corn Tikki.png"
-    ],
+    "thumbnail": "/products/STARTER/STARTER/21 Starter Corn Tikki.png",
+    "detailedImages": ["/products/STARTER/STARTER/21 Starter Corn Tikki.png"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -3977,9 +3931,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/22 Starter Chilli Garlic Potato Nug..png",
+    "thumbnail": "/products/STARTER/STARTER/22 Starter Chilli Garlic Potato Nug..png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/22 Starter Chilli Garlic Potato Nug..png"
+      "/products/STARTER/STARTER/22 Starter Chilli Garlic Potato Nug..png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -4016,9 +3970,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/22 Starter Chilli Garlic Potato Nug..png",
+    "thumbnail": "/products/STARTER/STARTER/22 Starter Chilli Garlic Potato Nug..png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/22 Starter Chilli Garlic Potato Nug..png"
+      "/products/STARTER/STARTER/22 Starter Chilli Garlic Potato Nug..png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -4055,9 +4009,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/23 Starter Farali Red Tikkki.png",
+    "thumbnail": "/products/STARTER/STARTER/23 Starter Farali Red Tikkki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/23 Starter Farali Red Tikkki.png"
+      "/products/STARTER/STARTER/23 Starter Farali Red Tikkki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -4094,9 +4048,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/23 Starter Farali Red Tikkki.png",
+    "thumbnail": "/products/STARTER/STARTER/23 Starter Farali Red Tikkki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/23 Starter Farali Red Tikkki.png"
+      "/products/STARTER/STARTER/23 Starter Farali Red Tikkki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -4133,10 +4087,8 @@
     "boxQuantity": 20,
     "category": "TAVA SPECIAL",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/TAVA SPECIAL/TAVA SPECIAL/01 Pulka Roti.png",
-    "detailedImages": [
-      "/public/products/TAVA SPECIAL/TAVA SPECIAL/01 Pulka Roti.png"
-    ],
+    "thumbnail": "/products/TAVA SPECIAL/TAVA SPECIAL/01 Pulka Roti.png",
+    "detailedImages": ["/products/TAVA SPECIAL/TAVA SPECIAL/01 Pulka Roti.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -4172,9 +4124,9 @@
     "boxQuantity": 20,
     "category": "TAVA SPECIAL",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/TAVA SPECIAL/TAVA SPECIAL/03 Tava Parotha.png",
+    "thumbnail": "/products/TAVA SPECIAL/TAVA SPECIAL/03 Tava Parotha.png",
     "detailedImages": [
-      "/public/products/TAVA SPECIAL/TAVA SPECIAL/03 Tava Parotha.png"
+      "/products/TAVA SPECIAL/TAVA SPECIAL/03 Tava Parotha.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -4211,9 +4163,9 @@
     "boxQuantity": 20,
     "category": "TAVA SPECIAL",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/TAVA SPECIAL/TAVA SPECIAL/07 Lachha Paratha.png",
+    "thumbnail": "/products/TAVA SPECIAL/TAVA SPECIAL/07 Lachha Paratha.png",
     "detailedImages": [
-      "/public/products/TAVA SPECIAL/TAVA SPECIAL/07 Lachha Paratha.png"
+      "/products/TAVA SPECIAL/TAVA SPECIAL/07 Lachha Paratha.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -4250,9 +4202,9 @@
     "boxQuantity": 25,
     "category": "TAVA SPECIAL",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/TAVA SPECIAL/TAVA SPECIAL/06 Alu Paratha.png",
+    "thumbnail": "/products/TAVA SPECIAL/TAVA SPECIAL/06 Alu Paratha.png",
     "detailedImages": [
-      "/public/products/TAVA SPECIAL/TAVA SPECIAL/06 Alu Paratha.png"
+      "/products/TAVA SPECIAL/TAVA SPECIAL/06 Alu Paratha.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -4289,9 +4241,9 @@
     "boxQuantity": 25,
     "category": "TAVA SPECIAL",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/TAVA SPECIAL/TAVA SPECIAL/04 Veg Paratha.png",
+    "thumbnail": "/products/TAVA SPECIAL/TAVA SPECIAL/04 Veg Paratha.png",
     "detailedImages": [
-      "/public/products/TAVA SPECIAL/TAVA SPECIAL/04 Veg Paratha.png"
+      "/products/TAVA SPECIAL/TAVA SPECIAL/04 Veg Paratha.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -4328,9 +4280,9 @@
     "boxQuantity": 25,
     "category": "TAVA SPECIAL",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/TAVA SPECIAL/TAVA SPECIAL/05 Dal Paratha.png",
+    "thumbnail": "/products/TAVA SPECIAL/TAVA SPECIAL/05 Dal Paratha.png",
     "detailedImages": [
-      "/public/products/TAVA SPECIAL/TAVA SPECIAL/05 Dal Paratha.png"
+      "/products/TAVA SPECIAL/TAVA SPECIAL/05 Dal Paratha.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -4367,9 +4319,9 @@
     "boxQuantity": 25,
     "category": "TAVA SPECIAL",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/TAVA SPECIAL/TAVA SPECIAL/08 Paneer Chees Paratha.png",
+    "thumbnail": "/products/TAVA SPECIAL/TAVA SPECIAL/08 Paneer Chees Paratha.png",
     "detailedImages": [
-      "/public/products/TAVA SPECIAL/TAVA SPECIAL/08 Paneer Chees Paratha.png"
+      "/products/TAVA SPECIAL/TAVA SPECIAL/08 Paneer Chees Paratha.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -4406,10 +4358,8 @@
     "boxQuantity": 20,
     "category": "TAVA SPECIAL",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/TAVA SPECIAL/TAVA SPECIAL/02 Thepla.png",
-    "detailedImages": [
-      "/public/products/TAVA SPECIAL/TAVA SPECIAL/02 Thepla.png"
-    ],
+    "thumbnail": "/products/TAVA SPECIAL/TAVA SPECIAL/02 Thepla.png",
+    "detailedImages": ["/products/TAVA SPECIAL/TAVA SPECIAL/02 Thepla.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -4445,8 +4395,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/01 Garam Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/01 Garam Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/01 Garam Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/01 Garam Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4482,8 +4432,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/01 Garam Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/01 Garam Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/01 Garam Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/01 Garam Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4519,10 +4469,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/02 Kitchen King Masala.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/02 Kitchen King Masala.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/02 Kitchen King Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/02 Kitchen King Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4558,8 +4506,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/03 Dhaniya Powder.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/03 Dhaniya Powder.png"],
+    "thumbnail": "/products/SPICES/SPICES/03 Dhaniya Powder.png",
+    "detailedImages": ["/products/SPICES/SPICES/03 Dhaniya Powder.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4595,8 +4543,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/04 Jeera Powder.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/04 Jeera Powder.png"],
+    "thumbnail": "/products/SPICES/SPICES/04 Jeera Powder.png",
+    "detailedImages": ["/products/SPICES/SPICES/04 Jeera Powder.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4632,10 +4580,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/17 Dhaniya Jeera Powder.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/17 Dhaniya Jeera Powder.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/17 Dhaniya Jeera Powder.png",
+    "detailedImages": ["/products/SPICES/SPICES/17 Dhaniya Jeera Powder.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4671,8 +4617,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/18 Ap Subji Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/18 Ap Subji Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/18 Ap Subji Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/18 Ap Subji Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4708,10 +4654,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/05 Spicy Chilli Powder.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/05 Spicy Chilli Powder.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/05 Spicy Chilli Powder.png",
+    "detailedImages": ["/products/SPICES/SPICES/05 Spicy Chilli Powder.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4747,10 +4691,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/06 Kashmiri Chilli Powder.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/06 Kashmiri Chilli Powder.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/06 Kashmiri Chilli Powder.png",
+    "detailedImages": ["/products/SPICES/SPICES/06 Kashmiri Chilli Powder.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4786,10 +4728,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/06 Kashmiri Chilli Powder.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/06 Kashmiri Chilli Powder.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/06 Kashmiri Chilli Powder.png",
+    "detailedImages": ["/products/SPICES/SPICES/06 Kashmiri Chilli Powder.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4825,8 +4765,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/07 Mutton Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/07 Mutton Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/07 Mutton Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/07 Mutton Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4862,8 +4802,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/07 Mutton Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/07 Mutton Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/07 Mutton Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/07 Mutton Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4899,10 +4839,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/08 Pav Bhaji Masala.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/08 Pav Bhaji Masala.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/08 Pav Bhaji Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/08 Pav Bhaji Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4938,8 +4876,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/09 Sambhar Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/09 Sambhar Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/09 Sambhar Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/09 Sambhar Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -4975,8 +4913,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/09 Sambhar Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/09 Sambhar Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/09 Sambhar Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/09 Sambhar Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5012,8 +4950,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/10 Haldi Powder.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/10 Haldi Powder.png"],
+    "thumbnail": "/products/SPICES/SPICES/10 Haldi Powder.png",
+    "detailedImages": ["/products/SPICES/SPICES/10 Haldi Powder.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5049,8 +4987,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/11 Fish Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/11 Fish Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/11 Fish Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/11 Fish Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5086,8 +5024,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/11 Fish Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/11 Fish Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/11 Fish Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/11 Fish Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5123,8 +5061,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/12 Chicken Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/12 Chicken Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/12 Chicken Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/12 Chicken Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5160,8 +5098,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/13 Biryani Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/13 Biryani Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/13 Biryani Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/13 Biryani Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5197,10 +5135,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/14 Peri Peri Masala.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/14 Peri Peri Masala.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/14 Peri Peri Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/14 Peri Peri Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5236,10 +5172,8 @@
     "boxQuantity": 12,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/19 Vada Pav Chutney Jar.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/19 Vada Pav Chutney Jar.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/19 Vada Pav Chutney Jar.png",
+    "detailedImages": ["/products/SPICES/SPICES/19 Vada Pav Chutney Jar.png"],
     "packagingType": "JAR",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5275,8 +5209,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/15 Chaat Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/15 Chaat Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/15 Chaat Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/15 Chaat Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5312,10 +5246,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/SPICES/SPICES/16 Pudina Jaleera Masala.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/16 Pudina Jaleera Masala.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/16 Pudina Jaleera Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/16 Pudina Jaleera Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO USE",
@@ -5351,8 +5283,8 @@
     "boxQuantity": 16,
     "category": "Ready to Eat South Special",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SOUTH/SOUTH/05 Idli.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/05 Idli.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/05 Idli.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/05 Idli.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -5388,8 +5320,8 @@
     "boxQuantity": 16,
     "category": "Ready to Eat South Special",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SOUTH/SOUTH/04 Dahi Vada.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/04 Dahi Vada.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/04 Dahi Vada.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/04 Dahi Vada.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -5425,8 +5357,8 @@
     "boxQuantity": 16,
     "category": "Ready to Eat South Special",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SOUTH/SOUTH/03 Mendu Vada.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/03 Mendu Vada.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/03 Mendu Vada.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/03 Mendu Vada.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -5462,8 +5394,8 @@
     "boxQuantity": 24,
     "category": "Ready to Eat South Special",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SOUTH/SOUTH/02 Sambhar.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/02 Sambhar.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/02 Sambhar.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/02 Sambhar.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -5499,8 +5431,8 @@
     "boxQuantity": 24,
     "category": "Ready to Eat South Special",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/SOUTH/SOUTH/01 Coconut Chutney.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/01 Coconut Chutney.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/01 Coconut Chutney.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/01 Coconut Chutney.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -5536,10 +5468,10 @@
     "boxQuantity": 12,
     "category": "DRIED POWDER",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER.png",
+    "thumbnail": "/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER.png",
     "detailedImages": [
-      "/public/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER.png",
-      "/public/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER 1.png"
+      "/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER.png",
+      "/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER 1.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -5576,9 +5508,9 @@
     "boxQuantity": 12,
     "category": "DRIED POWDER",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/DRIED POWDER/DRIED POWDER DONE/PUDINA POWDER.png",
+    "thumbnail": "/products/DRIED POWDER/DRIED POWDER DONE/PUDINA POWDER.png",
     "detailedImages": [
-      "/public/products/DRIED POWDER/DRIED POWDER DONE/PUDINA POWDER.png"
+      "/products/DRIED POWDER/DRIED POWDER DONE/PUDINA POWDER.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -5615,9 +5547,9 @@
     "boxQuantity": 12,
     "category": "DRIED POWDER",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/DRIED POWDER/DRIED POWDER DONE/GARLIC POWDER.png",
+    "thumbnail": "/products/DRIED POWDER/DRIED POWDER DONE/GARLIC POWDER.png",
     "detailedImages": [
-      "/public/products/DRIED POWDER/DRIED POWDER DONE/GARLIC POWDER 1.png"
+      "/products/DRIED POWDER/DRIED POWDER DONE/GARLIC POWDER 1.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -5654,9 +5586,9 @@
     "boxQuantity": 12,
     "category": "DRIED POWDER",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/DRIED POWDER/DRIED POWDER DONE/GINGER POWDER.png",
+    "thumbnail": "/products/DRIED POWDER/DRIED POWDER DONE/GINGER POWDER.png",
     "detailedImages": [
-      "/public/products/DRIED POWDER/DRIED POWDER DONE/GARLIC POWDER 1.png"
+      "/products/DRIED POWDER/DRIED POWDER DONE/GARLIC POWDER 1.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -5693,9 +5625,9 @@
     "boxQuantity": 12,
     "category": "DRIED POWDER",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/DRIED POWDER/DRIED POWDER DONE/GREEN CORIANDER POWDER.png",
+    "thumbnail": "/products/DRIED POWDER/DRIED POWDER DONE/GREEN CORIANDER POWDER.png",
     "detailedImages": [
-      "/public/products/DRIED POWDER/DRIED POWDER DONE/GREEN CORIANDER POWDER 1.png"
+      "/products/DRIED POWDER/DRIED POWDER DONE/GREEN CORIANDER POWDER 1.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -5732,9 +5664,9 @@
     "boxQuantity": 12,
     "category": "DRIED POWDER",
     "description": "READY TO USE",
-    "thumbnail": "/public/products/DRIED POWDER/DRIED POWDER DONE/TOMATO POWDER.png",
+    "thumbnail": "/products/DRIED POWDER/DRIED POWDER DONE/TOMATO POWDER.png",
     "detailedImages": [
-      "/public/products/DRIED POWDER/DRIED POWDER DONE/TOMATO POWDER 1.png"
+      "/products/DRIED POWDER/DRIED POWDER DONE/TOMATO POWDER 1.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -5771,8 +5703,8 @@
     "boxQuantity": 24,
     "category": "READY TO EAT RICE",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/RICE/RICE/05 Jeera Rice.png",
-    "detailedImages": ["/public/products/RICE/RICE/05 Jeera Rice.png"],
+    "thumbnail": "/products/RICE/RICE/05 Jeera Rice.png",
+    "detailedImages": ["/products/RICE/RICE/05 Jeera Rice.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -5808,8 +5740,8 @@
     "boxQuantity": 24,
     "category": "READY TO EAT RICE",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/RICE/RICE/04 Peas Pulao.png",
-    "detailedImages": ["/public/products/RICE/RICE/04 Peas Pulao.png"],
+    "thumbnail": "/products/RICE/RICE/04 Peas Pulao.png",
+    "detailedImages": ["/products/RICE/RICE/04 Peas Pulao.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -5845,8 +5777,8 @@
     "boxQuantity": 24,
     "category": "READY TO EAT RICE",
     "description": "READY TO EAT",
-    "thumbnail": "/public/products/RICE/RICE/03 Veg Pulao.png",
-    "detailedImages": ["/public/products/RICE/RICE/03 Veg Pulao.png"],
+    "thumbnail": "/products/RICE/RICE/03 Veg Pulao.png",
+    "detailedImages": ["/products/RICE/RICE/03 Veg Pulao.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -5882,8 +5814,8 @@
     "boxQuantity": 24,
     "category": "READY TO EAT RICE",
     "description": " READY TO EAT",
-    "thumbnail": "/public/products/RICE/RICE/02 Rajma Chaval.png",
-    "detailedImages": ["/public/products/RICE/RICE/02 Rajma Chaval.png"],
+    "thumbnail": "/products/RICE/RICE/02 Rajma Chaval.png",
+    "detailedImages": ["/products/RICE/RICE/02 Rajma Chaval.png"],
     "packagingType": " BOX PACKET",
     "friesType": " NA",
     "feature": " READY TO EAT",
@@ -5919,8 +5851,8 @@
     "boxQuantity": 24,
     "category": "READY TO EAT RICE",
     "description": " READY TO EAT",
-    "thumbnail": "/public/products/RICE/RICE/01 Chhole Chaval.png",
-    "detailedImages": ["/public/products/RICE/RICE/01 Chhole Chaval.png"],
+    "thumbnail": "/products/RICE/RICE/01 Chhole Chaval.png",
+    "detailedImages": ["/products/RICE/RICE/01 Chhole Chaval.png"],
     "packagingType": " BOX PACKET",
     "friesType": " NA",
     "feature": " READY TO EAT",
@@ -5956,8 +5888,8 @@
     "boxQuantity": 24,
     "category": " READY TO COOK SOUP",
     "description": " READY TO EAT",
-    "thumbnail": "/public/products/SOUP/SOUP/TOMATO SOUP.jpeg",
-    "detailedImages": ["/public/products/SOUP/SOUP/TOMATO SOUP.jpeg"],
+    "thumbnail": "/products/SOUP/SOUP/TOMATO SOUP.jpeg",
+    "detailedImages": ["/products/SOUP/SOUP/TOMATO SOUP.jpeg"],
     "packagingType": " BOX PACKET",
     "friesType": " NA",
     "feature": " READY TO EAT",
@@ -5993,9 +5925,9 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK ALL PURPOSE GRAVY",
-    "thumbnail": "/public/products/GRAVY DONE/GRAVY DONE/ALL PURPOSE GRAVY.JPG",
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/ALL PURPOSE GRAVY.JPG",
     "detailedImages": [
-      "/public/products/GRAVY DONE/GRAVY DONE/ALL PURPOSE GRAVY 1.JPG"
+      "/products/GRAVY DONE/GRAVY DONE/ALL PURPOSE GRAVY 1.JPG"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -6032,9 +5964,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT PANEER BUTTER MASALA",
-    "thumbnail": "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BUTTER MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BUTTER MASALA.JPG",
     "detailedImages": [
-      "/public/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BUTTER MASALA.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BUTTER MASALA.JPG"
     ],
     "packagingType": "BLISTER",
     "friesType": "NA",
@@ -6071,8 +6003,8 @@
     "boxQuantity": 10,
     "category": "Ready to Eat South Special",
     "description": "READY TO EAT IDLI",
-    "thumbnail": "/public/products/SOUTH/SOUTH/05 Idli.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/05 Idli.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/05 Idli.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/05 Idli.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -6108,8 +6040,8 @@
     "boxQuantity": 10,
     "category": "Ready to Eat South Special",
     "description": "READY TO EAT VADA",
-    "thumbnail": "/public/products/SOUTH/SOUTH/04 Dahi Vada.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/04 Dahi Vada.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/04 Dahi Vada.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/04 Dahi Vada.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -6145,8 +6077,8 @@
     "boxQuantity": 10,
     "category": "Ready to Eat South Special",
     "description": "READY TO COOK MENDU VADA",
-    "thumbnail": "/public/products/SOUTH/SOUTH/03 Mendu Vada.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/03 Mendu Vada.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/03 Mendu Vada.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/03 Mendu Vada.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -6182,8 +6114,8 @@
     "boxQuantity": 10,
     "category": "Ready to Eat South Special",
     "description": "READY TO EAT SAMBHAR",
-    "thumbnail": "/public/products/SOUTH/SOUTH/02 Sambhar.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/02 Sambhar.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/02 Sambhar.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/02 Sambhar.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -6219,8 +6151,8 @@
     "boxQuantity": 10,
     "category": "Ready to Eat South Special",
     "description": "READY TO EAT COCONUT CHUTNEY",
-    "thumbnail": "/public/products/SOUTH/SOUTH/01 Coconut Chutney.png",
-    "detailedImages": ["/public/products/SOUTH/SOUTH/01 Coconut Chutney.png"],
+    "thumbnail": "/products/SOUTH/SOUTH/01 Coconut Chutney.png",
+    "detailedImages": ["/products/SOUTH/SOUTH/01 Coconut Chutney.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -6256,8 +6188,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "SPICE",
-    "thumbnail": "/public/products/SPICES/SPICES/04 Jeera Powder.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/04 Jeera Powder.png"],
+    "thumbnail": "/products/SPICES/SPICES/04 Jeera Powder.png",
+    "detailedImages": ["/products/SPICES/SPICES/04 Jeera Powder.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "NATURAL PRODUCT",
@@ -6293,8 +6225,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY",
-    "thumbnail": "/public/products/SPICES/SPICES/12 Chicken Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/12 Chicken Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/12 Chicken Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/12 Chicken Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "NATURAL PRODUCT",
@@ -6330,8 +6262,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY",
-    "thumbnail": "/public/products/SPICES/SPICES/13 Biryani Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/13 Biryani Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/13 Biryani Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/13 Biryani Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "NATURAL PRODUCT",
@@ -6367,10 +6299,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY",
-    "thumbnail": "/public/products/SPICES/SPICES/14 Peri Peri Masala.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/14 Peri Peri Masala.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/14 Peri Peri Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/14 Peri Peri Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "NATURAL PRODUCT",
@@ -6406,8 +6336,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY",
-    "thumbnail": "/public/products/SPICES/SPICES/15 Chaat Masala.png",
-    "detailedImages": ["/public/products/SPICES/SPICES/15 Chaat Masala.png"],
+    "thumbnail": "/products/SPICES/SPICES/15 Chaat Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/15 Chaat Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "NATURAL PRODUCT",
@@ -6443,10 +6373,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY",
-    "thumbnail": "/public/products/SPICES/SPICES/16 Pudina Jaleera Masala.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/16 Pudina Jaleera Masala.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/16 Pudina Jaleera Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/16 Pudina Jaleera Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "NATURAL PRODUCT",
@@ -6482,10 +6410,8 @@
     "boxQuantity": 16,
     "category": "SPICES AND MASALA",
     "description": "READY",
-    "thumbnail": "/public/products/SPICES/SPICES/08 Pav Bhaji Masala.png",
-    "detailedImages": [
-      "/public/products/SPICES/SPICES/08 Pav Bhaji Masala.png"
-    ],
+    "thumbnail": "/products/SPICES/SPICES/08 Pav Bhaji Masala.png",
+    "detailedImages": ["/products/SPICES/SPICES/08 Pav Bhaji Masala.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "NATURAL PRODUCT",
@@ -6521,8 +6447,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO COOK JAIN PAVBHAJI",
-    "thumbnail": "/public/products/SNACKS/SNACKS/Snakcs 01.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/Snakcs 01.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/Snakcs 01.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/Snakcs 01.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -6558,8 +6484,8 @@
     "boxQuantity": 10,
     "category": "READY TO COOK SNACKS",
     "description": "READY TO EAT PIZZA",
-    "thumbnail": "/public/products/SNACKS/SNACKS/italian pizza.png",
-    "detailedImages": ["/public/products/SNACKS/SNACKS/italian pizza.png"],
+    "thumbnail": "/products/SNACKS/SNACKS/italian pizza.png",
+    "detailedImages": ["/products/SNACKS/SNACKS/italian pizza.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -6595,8 +6521,8 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK BABY SAMOSA",
-    "thumbnail": "/public/products/STARTER/STARTER/BABY SAMOSA.jpeg",
-    "detailedImages": ["/public/products/STARTER/STARTER/BABY SAMOSA.jpeg"],
+    "thumbnail": "/products/STARTER/STARTER/BABY SAMOSA.jpeg",
+    "detailedImages": ["/products/STARTER/STARTER/BABY SAMOSA.jpeg"],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
     "feature": "READY TO COOK",
@@ -6632,9 +6558,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK ",
-    "thumbnail": "/public/products/STARTER/STARTER/06 Starter Paneer Papad Crispy Jain.png",
+    "thumbnail": "/products/STARTER/STARTER/06 Starter Paneer Papad Crispy Jain.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/06 Starter Paneer Papad Crispy Jain.png"
+      "/products/STARTER/STARTER/06 Starter Paneer Papad Crispy Jain.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -6671,9 +6597,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/07 Starter Harabhara Kabab Jain.png",
+    "thumbnail": "/products/STARTER/STARTER/07 Starter Harabhara Kabab Jain.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/07 Starter Harabhara Kabab Jain.png"
+      "/products/STARTER/STARTER/07 Starter Harabhara Kabab Jain.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -6710,9 +6636,9 @@
     "boxQuantity": 16,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/10 Starter Sabudana Vada.png",
+    "thumbnail": "/products/STARTER/STARTER/10 Starter Sabudana Vada.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/10 Starter Sabudana Vada.png"
+      "/products/STARTER/STARTER/10 Starter Sabudana Vada.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -6749,9 +6675,9 @@
     "boxQuantity": 14,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/11 Starter Crispy Paneer Burger Tikki.png",
+    "thumbnail": "/products/STARTER/STARTER/11 Starter Crispy Paneer Burger Tikki.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/11 Starter Crispy Paneer Burger Tikki.png"
+      "/products/STARTER/STARTER/11 Starter Crispy Paneer Burger Tikki.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "DEEP FRY",
@@ -6788,9 +6714,9 @@
     "boxQuantity": 10,
     "category": "STARTER",
     "description": "READY TO COOK",
-    "thumbnail": "/public/products/STARTER/STARTER/24 Starter Manchutrian Sauce.png",
+    "thumbnail": "/products/STARTER/STARTER/24 Starter Manchutrian Sauce.png",
     "detailedImages": [
-      "/public/products/STARTER/STARTER/24 Starter Manchutrian Sauce.png"
+      "/products/STARTER/STARTER/24 Starter Manchutrian Sauce.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
