@@ -2,40 +2,49 @@ import { useState, useEffect } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import { useParams } from 'react-router-dom';
 
-import { useProductStore } from '@/zustand/apis/ProductStore';
+import products from '../../../assets/jsons/Products.json'; // 👈 Import JSON file
 
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 
 const DetailedImages = () => {
-  const { getSingleProduct, product, setProduct } = useProductStore();
   const [loading, setLoading] = useState(true);
   const [mainImage, setMainImage] = useState('');
+  const [product, setProduct] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
-    fetchProducts();
-  }, []);
+    fetchProductFromJson();
+  }, [id]);
 
-  const fetchProducts = async () => {
+  const fetchProductFromJson = () => {
     try {
-      const response = await getSingleProduct(id);
-      setProduct(response.data);
+      setLoading(true);
 
-      if (
-        response.data.detailedImages &&
-        response.data.detailedImages.length > 0
-      ) {
-        setMainImage(response.data.detailedImages[0]);
+      // ✅ Find product by id (since _id might be an object in JSON)
+      const foundProduct = products.find(
+        (p) => p._id?.$oid === id || p._id === id
+      );
+
+      if (foundProduct) {
+        setProduct(foundProduct);
+
+        if (
+          foundProduct.detailedImages &&
+          foundProduct.detailedImages.length > 0
+        ) {
+          setMainImage(foundProduct.detailedImages[0]);
+        }
+        console.log('Product loaded from JSON:', foundProduct);
+      } else {
+        console.warn('Product not found in JSON for id:', id);
       }
-      console.log('Product fetched successfully:', response.data);
     } catch (error) {
-      console.error('Error fetching products:', error);
+      console.error('Error loading product from JSON:', error);
     } finally {
       setLoading(false);
     }
   };
 
-  // Function to format field names for display
   const formatFieldName = (field) => {
     const fieldMap = {
       boxQuantity: 'Box Size',
@@ -50,7 +59,6 @@ const DetailedImages = () => {
     );
   };
 
-  // Define fields to display in the table
   const detailFields = [
     'boxQuantity',
     'packagingType',
@@ -122,14 +130,7 @@ const DetailedImages = () => {
               {product.category}
             </p>
           </div>
-          {/* <div className='flex gap-4 mb-8'>
-            <button className='bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600'>
-              Add to Cart
-            </button>
-            <button className='bg-gray-200 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-300'>
-              Add to Wishlist
-            </button>
-          </div> */}
+
           <div className='mb-10'>
             <h2 className='text-2xl font-semibold mb-6 text-gray-900'>
               {product.detailedDescription || 'Product Details'}
