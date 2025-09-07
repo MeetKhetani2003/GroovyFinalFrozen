@@ -31,7 +31,7 @@ const Menu = () => {
   const [categories, setCategories] = useState(['All Categories']);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageLimit] = useState(8);
+  const [pageLimit] = useState(20);
   const { addPacketToCart } = useCart();
 
   const [filters, setFilters] = useState({
