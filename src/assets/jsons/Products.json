@@ -253,8 +253,8 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/YELLOW GRAVY.JPG",
-    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/YELLOW GRAVY.JPG"],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/YELLOW GRAVY.png",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/YELLOW GRAVY.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -290,8 +290,8 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/RED GRAVY.JPG",
-    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/RED GRAVY.JPG"],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/RED GRAVY.png",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/RED GRAVY.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -327,12 +327,8 @@
     "boxQuantity": 20,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY.JPG",
-    "detailedImages": [
-      "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 1.JPG",
-      "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 2.JPG",
-      "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY 3.JPG"
-    ],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY.png",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/WHITE GRAVY.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -368,10 +364,10 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG",
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.png",
     "detailedImages": [
-      "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG",
-      "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.JPG"
+      "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.png",
+      "/products/GRAVY DONE/GRAVY DONE/CHOP GRAVY.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -408,10 +404,10 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG",
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.png",
     "detailedImages": [
-      "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG",
-      "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.JPG"
+      "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.png",
+      "/products/GRAVY DONE/GRAVY DONE/JAIN GRAVY.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -448,8 +444,8 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/JAIN CHOP GRAVY.JPG",
-    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/JAIN CHOP GRAVY.JPG"],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/JAIN CHOP GRAVY.png",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/JAIN CHOP GRAVY.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -485,8 +481,8 @@
     "boxQuantity": 20,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK",
-    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/PALAK GRAVY.JPG",
-    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/PALAK GRAVY 1.JPG"],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/PALAK GRAVY.png",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/PALAK GRAVY.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -522,9 +518,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER MAKHANI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER MAKHANI.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER MAKHANI 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER MAKHANI.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -561,9 +557,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER PANEER.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER PANEER.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER PANEER.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER PANEER.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -600,9 +596,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KADAI PANEER.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KADAI PANEER.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KADAI PANEER.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KADAI PANEER.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -639,9 +635,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PALAK PANEER.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PALAK PANEER.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PALAK PANEER.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PALAK PANEER.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -678,9 +674,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER TIKKA MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER TIKKA MASALA.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER TIKKA MASALA.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER TIKKA MASALA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -717,9 +713,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BHURJI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BHURJI.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BHURJI.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BHURJI.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -756,9 +752,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER LABABDAR.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER LABABDAR.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER LABABDAR.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER LABABDAR.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -795,9 +791,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER METHI MALAI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER METHI MALAI.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER METHI MALAI.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/MUTTER METHI MALAI.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -834,9 +830,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/VEG KOFTA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/VEG KOFTA.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/VEG KOFTA 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/VEG KOFTA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -873,10 +869,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA.JPG",
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOFTA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -913,9 +908,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KASHMIRI DUM ALOO.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KASHMIRI DUM ALOO.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KASHMIRI DUM ALOO.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/KASHMIRI DUM ALOO.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -952,9 +947,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/BANARASI DUM ALOO.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/BANARASI DUM ALOO.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/BANARASI DUM ALOO.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/BANARASI DUM ALOO.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -991,9 +986,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/RAJMA MASALA 2.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/RAJMA MASALA 2.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/RAJMA MASALA 2.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/RAJMA MASALA 2.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1030,10 +1025,9 @@
     "boxQuantity": 10,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 1.JPG",
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 2.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA.png"
     ],
     "packagingType": "PP BEG",
     "friesType": "NA",
@@ -1070,10 +1064,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 2.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA .JPG",
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/CHANA MASALA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1110,9 +1103,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOLHAPURI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOLHAPURI.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOLHAPURI 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER KOLHAPURI.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1149,9 +1142,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER METHI MALAI.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER METHI MALAI.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER METHI MALAI 1.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER METHI MALAI.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1188,10 +1181,9 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (1).JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TAMATO.png",
     "detailedImages": [
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (1).JPG",
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TOMATO (2).JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SEV TAMATO.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1228,10 +1220,9 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI.png",
     "detailedImages": [
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI 1.JPG",
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/SUKIBHAJI.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1268,10 +1259,9 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA.png",
     "detailedImages": [
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA 1.JPG",
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/LASANIYA BATATA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1308,10 +1298,9 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA.png",
     "detailedImages": [
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA.JPG",
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA 1.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/CHORI MASALA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1348,10 +1337,9 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA.png",
     "detailedImages": [
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA.JPG",
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA 1.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/VAL MASALA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1388,9 +1376,9 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/GREEN MUG MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/GREEN MUG MASALA.png",
     "detailedImages": [
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/GREEN MUG MASALA.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/GREEN MUG MASALA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1427,10 +1415,9 @@
     "boxQuantity": 24,
     "category": "GUJARATI READY TO EAT SUBJI",
     "description": "READY TO EAT",
-    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA.png",
     "detailedImages": [
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA.JPG",
-      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA 1.JPG"
+      "/products/READY TO EAT GUJARATI SABJI/READY TO EAT GUJARATI SABJI/DESI CHANA MASALA.png"
     ],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
@@ -1467,8 +1454,8 @@
     "boxQuantity": 10,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/products/DAL/DAL DONE/YELLOW DAL.JPG",
-    "detailedImages": ["/products/DAL/DAL DONE/YELLOW DAL.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/YELLOW DAL.png",
+    "detailedImages": ["/products/DAL/DAL DONE/YELLOW DAL.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1504,8 +1491,8 @@
     "boxQuantity": 24,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/products/DAL/DAL DONE/YELLOW DAL.JPG",
-    "detailedImages": ["/products/DAL/DAL DONE/YELLOW DAL.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/YELLOW DAL.png",
+    "detailedImages": ["/products/DAL/DAL DONE/YELLOW DAL.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1541,8 +1528,8 @@
     "boxQuantity": 24,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/products/DAL/DAL DONE/DAL MAKHANI.JPG",
-    "detailedImages": ["/products/DAL/DAL DONE/DAL MAKHANI.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/DAL MAKHANI.png",
+    "detailedImages": ["/products/DAL/DAL DONE/DAL MAKHANI.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1578,8 +1565,8 @@
     "boxQuantity": 10,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/products/DAL/DAL DONE/DAL MAKHANI.JPG",
-    "detailedImages": ["/products/DAL/DAL DONE/DAL MAKHANI.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/DAL MAKHANI.png",
+    "detailedImages": ["/products/DAL/DAL DONE/DAL MAKHANI.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1615,8 +1602,8 @@
     "boxQuantity": 24,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/products/DAL/DAL DONE/DAL KHICHADI.JPG",
-    "detailedImages": ["/products/DAL/DAL DONE/DAL KHICHADI.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/DAL KHICHADI.png",
+    "detailedImages": ["/products/DAL/DAL DONE/DAL KHICHADI.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -1652,8 +1639,8 @@
     "boxQuantity": 24,
     "category": "DAL",
     "description": "READY TO EAT",
-    "thumbnail": "/products/DAL/DAL DONE/SABUDANA KHICHADI.JPG",
-    "detailedImages": ["/products/DAL/DAL DONE/SABUDANA KHICHADI.JPG"],
+    "thumbnail": "/products/DAL/DAL DONE/SABUDANA KHICHADI.png",
+    "detailedImages": ["/products/DAL/DAL DONE/SABUDANA KHICHADI.png"],
     "packagingType": "BOX PACKET",
     "friesType": "NA",
     "feature": "READY TO EAT",
@@ -5470,8 +5457,7 @@
     "description": "READY TO USE",
     "thumbnail": "/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER.png",
     "detailedImages": [
-      "/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER.png",
-      "/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER 1.png"
+      "/products/DRIED POWDER/DRIED POWDER DONE/ONION POWDER.png"
     ],
     "packagingType": "JAR",
     "friesType": "NA",
@@ -5925,10 +5911,8 @@
     "boxQuantity": 10,
     "category": "Ready to Cook Gravy Base",
     "description": "READY TO COOK ALL PURPOSE GRAVY",
-    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/ALL PURPOSE GRAVY.JPG",
-    "detailedImages": [
-      "/products/GRAVY DONE/GRAVY DONE/ALL PURPOSE GRAVY 1.JPG"
-    ],
+    "thumbnail": "/products/GRAVY DONE/GRAVY DONE/ALL PURPOSE GRAVY.png",
+    "detailedImages": ["/products/GRAVY DONE/GRAVY DONE/ALL PURPOSE GRAVY.png"],
     "packagingType": "PP BEG",
     "friesType": "NA",
     "feature": "READY TO COOK",
@@ -5964,9 +5948,9 @@
     "boxQuantity": 24,
     "category": "Indian Ready to Eat Sabji",
     "description": "READY TO EAT PANEER BUTTER MASALA",
-    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BUTTER MASALA.JPG",
+    "thumbnail": "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BUTTER MASALA.png",
     "detailedImages": [
-      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BUTTER MASALA.JPG"
+      "/products/READY TO EAT INDIAN SABJI/READY TO EAT INDIAN SABJI/PANEER BUTTER MASALA.png"
     ],
     "packagingType": "BLISTER",
     "friesType": "NA",
